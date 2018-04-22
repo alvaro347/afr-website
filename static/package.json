@@ -30,6 +30,11 @@
     "webpack": "^4.6.0"
   },
   "dependencies": {
+    "browser-sync": "^2.23.7",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-eslint": "^4.0.2",
+    "gulp-jasmine": "^4.0.0",
+    "gulp-sass": "^4.0.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
   }
