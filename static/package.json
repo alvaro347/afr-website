@@ -35,7 +35,9 @@
     "gulp-eslint": "^4.0.2",
     "gulp-jasmine": "^4.0.0",
     "gulp-sass": "^4.0.1",
+    "gulp-shell": "^0.6.5",
     "react": "^16.3.2",
-    "react-dom": "^16.3.2"
+    "react-dom": "^16.3.2",
+    "react-overlays": "^0.8.3"
   }
 }

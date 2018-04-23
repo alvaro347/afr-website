@@ -3,17 +3,26 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
-var browserSync = require('browser-sync').create();
-// var eslint = require('gulp-eslint');
+var browserSync = require('browser-sync');
+var eslint = require('gulp-eslint');
 var jasmine = require('gulp-jasmine');
+var eslint = require('gulp-eslint');
+var exec = require('child_process').exec;
+var shell = require('gulp-shell');
 
-gulp.task('default', ['styles', 'lint'], function() {
-  browserSync.init({
-    server: './'
-  });
+gulp.task('default', ['styles'], function() {
+  // browserSync.init({
+  //   server: './'
+  // });
+  browserSync({
+  notify: false,
+  proxy: "127.0.0.1:5003"
+});
 	gulp.watch('sass/**/*.scss', ['styles']);
-	gulp.watch('js/**/*.js', ['lint']);
+	// gulp.watch('js/**/*.js', ['lint']);
+  gulp.watch('js/**/*.js').on('change', browserSync.reload);
   gulp.watch("*.html").on('change', browserSync.reload);
+  gulp.watch("../server/*.py").on('change', browserSync.reload);
 });
 
 gulp.task('styles', function() {
@@ -47,3 +56,10 @@ gulp.task('tests', function () {
 			vendor: 'js/**/*.js'
 		}));
 });
+
+
+gulp.task('runserver', function() {
+    var proc = exec('python ../server/server.py');
+});
+
+gulp.task('flask', shell.task('python ../server/server.py'));

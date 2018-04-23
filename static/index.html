@@ -5,26 +5,42 @@
   <title>AFR Design</title>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}"> -->
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
-  <link rel="shortcut icon" type="image/png" href="/tests/lib/jasmine-{#.#.#}/jasmine_favicon.png">
-  <link rel="stylesheet" type="text/css" href="/tests/lib/jasmine-{#.#.#}/jasmine.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='/tests/lib/jasmine-3.1.0/jasmine_favicon.png') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/tests/lib/jasmine-3.1.0/jasmine.css') }}">
+
+  <!-- <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="shortcut icon" type="image/png" href="/tests/lib/jasmine-3.1.0/jasmine_favicon.png">
+  <link rel="stylesheet" type="text/css" href="/tests/lib/jasmine-3.1.0/jasmine.css"> -->
+
 </head>
 <body>
 
 
 
-  <h1>HI</h1>
-  <div id="content">
-    Changed
-  </div>
+
+
+  <h1>Hello</h1>
+
+<div id="root">
+
+</div>
+
+
+
+
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  <script type="text/javascript" src="/tests/lib/jasmine-{#.#.#}/jasmine.js"></script>
-  <script type="text/javascript" src="/tests/lib/jasmine-{#.#.#}/jasmine-html.js"></script>
-  <script type="text/javascript" src="/tests/lib/jasmine-{#.#.#}/boot.js"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='/tests/lib/jasmine-3.1.0/jasmine.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='/tests/lib/jasmine-3.1.0/jasmine-html.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='/tests/lib/jasmine-3.1.0/boot.js') }}"></script>
+  <!-- <script src="{{ url_for('static', filename='js/index.jsx') }}" type="text/javascript"></script> -->
+
+  <!-- <script type="text/javascript" src="/tests/lib/jasmine-3.1.0/jasmine.js"></script>
+  <script type="text/javascript" src="/tests/lib/jasmine-3.1.0/jasmine-html.js"></script>
+  <script type="text/javascript" src="/tests/lib/jasmine-3.1.0/boot.js"></script> -->
 
 
 </body>
