@@ -9,6 +9,9 @@ var jasmine = require('gulp-jasmine');
 var eslint = require('gulp-eslint');
 var exec = require('child_process').exec;
 var shell = require('gulp-shell');
+const webpack = require('webpack');
+const webpackStream = require('webpack-stream');
+const webpackConfig = require('./webpack.config.js');
 
 gulp.task('default', ['styles'], function() {
   // browserSync.init({
@@ -34,6 +37,13 @@ gulp.task('styles', function() {
 		}))
 		.pipe(gulp.dest('./css'))
 		.pipe(browserSync.stream());
+});
+
+
+gulp.task('css', () => {
+  gulp.src('./src/css/*.css')
+    .pipe(webpackStream(webpackConfig), webpack)
+    .pipe(gulp.dest('./dist/css'));
 });
 
 
