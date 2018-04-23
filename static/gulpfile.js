@@ -21,6 +21,7 @@ gulp.task('default', ['styles'], function() {
 	gulp.watch('sass/**/*.scss', ['styles']);
 	// gulp.watch('js/**/*.js', ['lint']);
   gulp.watch('js/**/*.js').on('change', browserSync.reload);
+  gulp.watch('js/**/*.jsx').on('change', browserSync.reload);
   gulp.watch("*.html").on('change', browserSync.reload);
   gulp.watch("../server/*.py").on('change', browserSync.reload);
 });
