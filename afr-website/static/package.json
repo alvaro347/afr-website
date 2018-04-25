@@ -49,9 +49,12 @@
     "gulp-autoprefixer": "^5.0.0",
     "gulp-eslint": "^4.0.2",
     "gulp-jasmine": "^4.0.0",
+    "gulp-resolve-url": "0.0.2",
     "gulp-sass": "^4.0.1",
     "gulp-shell": "^0.6.5",
     "lodash": "^4.17.5",
-    "react-overlays": "^0.8.3"
+    "react-overlays": "^0.8.3",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2"
   }
 }

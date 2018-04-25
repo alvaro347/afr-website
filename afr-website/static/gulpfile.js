@@ -12,6 +12,7 @@ var shell = require('gulp-shell');
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 const webpackConfig = require('./webpack.config.js');
+var gulpResolveUrl = require('gulp-resolve-url');
 
 gulp.task('default', ['styles'], function() {
   // browserSync.init({

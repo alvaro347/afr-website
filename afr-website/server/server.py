@@ -19,12 +19,40 @@ import os
 
 app = Flask(
     __name__, static_folder='../static/dist', template_folder='../static'
-    )
+)
+
+engine = create_engine('sqlite:///imagegallery.db')
+Base.metadata.bind = engine
+DBSession = sessionmaker(bind=engine)
+session = DBSession()
+
+
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def catch_all(path):
+    return render_template('index.html')
 
 
 @app.route('/')
-def index():
+def home():
     return render_template('index.html')
+
+# @app.route('/hello')
+# def hello():
+#     return get_hello()
+
+
+def get_hello():
+    greeting_list = ['Ciao', 'Hei', 'Salut', 'Hola', 'Hallo', 'Hej']
+    return random.choice(greeting_list)
+
+
+@app.route('/hello', methods=['GET'])
+def hello():
+    if 5 == 5:
+        return redirect('/login')
+    galleries = session.query(Gallery).all()
+    return jsonify(galleries=[gallery.serialize for gallery in galleries])
 
 
 if __name__ == '__main__':
