@@ -63,7 +63,7 @@ def get_hello():
 #     return jsonify(jsonResp)
 
 
-@app.route('/hello', methods=['GET'])
+@app.route('/hello/json', methods=['GET'])
 def hello():
     # if 5 == 5:
     #     return redirect('/login')

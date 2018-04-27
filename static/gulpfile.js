@@ -14,7 +14,7 @@ const webpackStream = require('webpack-stream');
 const webpackConfig = require('./webpack.config.js');
 
 
-gulp.task('default', function() {
+gulp.task('default', ['styles'], function() {
   // browserSync.init({
   //   server: './'
   // });
@@ -23,7 +23,7 @@ gulp.task('default', function() {
     proxy: "127.0.0.1:5003"
   });
   gulp.watch('sass/**/*.scss', ['styles']);
-  // gulp.watch('sass/**/*.scss').on('change', browserSync.reload);
+  gulp.watch('sass/**/*.scss').on('change', browserSync.reload);
   // gulp.watch('js/**/*.js', ['lint']);
   gulp.watch('js/**/*.js').on('change', browserSync.reload);
   gulp.watch('js/**/*.jsx').on('change', browserSync.reload);
@@ -37,12 +37,7 @@ gulp.task('styles', function() {
   .pipe(autoprefixer({
     browsers: ['last 2 versions']
   }))
-
   .pipe(gulp.dest('./css'))
-  // .pipe(urlAdjuster({
-  //   prepend: './~',
-  //   append: '?version=1',
-  // }))
   .pipe(browserSync.stream());
 });
 

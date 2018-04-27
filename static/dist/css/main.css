@@ -40,7 +40,7 @@ h1 {
 .nav-item {
   margin-right: 5px; }
 
-ul li.has-dropdown .dropdown {
+.has-dropdown .dropdown {
   width: 160px;
   -webkit-box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
@@ -57,7 +57,7 @@ ul li.has-dropdown .dropdown {
   -webkit-transition: 0s;
   transition: 0s; }
 
-ul li {
+.dropdown {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -151,7 +151,6 @@ ul li {
   bottom: 100%;
   left: 40px;
   border: solid transparent;
-  content: " ";
   height: 0;
   width: 0;
   position: absolute;
@@ -160,14 +159,14 @@ ul li {
   border-width: 8px;
   margin-left: -8px; }
 
-ul li.has-dropdown .dropdown li {
+.has-dropdown .dropdown {
   display: block;
   margin-bottom: 7px; }
 
-ul li.has-dropdown .dropdown li:last-child {
+.has-dropdown .dropdown {
   margin-bottom: 0; }
 
-ul li.has-dropdown .dropdown li a .menu-icon {
+.has-dropdown .dropdown .menu-icon {
   padding: 2px 0;
   display: block;
   color: #999999;
@@ -176,10 +175,10 @@ ul li.has-dropdown .dropdown li a .menu-icon {
   font-size: 13px;
   letter-spacing: 0; }
 
-ul li.has-dropdown .dropdown li a:hover .menu-icon {
+.has-dropdown .dropdown a:hover .menu-icon {
   color: #fff; }
 
-ul li.has-dropdown:hover a, ul li.has-dropdown:focus a {
+.has-dropdown:hover a, .has-dropdown:focus a {
   color: #fff; }
 
 ul li a {
@@ -195,7 +194,7 @@ a {
   color: #fff;
   text-decoration: none; }
 
-ul li a:hover, ul li a:focus, ul li a:active {
+a:hover, a:focus, a:active {
   color: white;
   text-decoration: none; }
 
@@ -213,7 +212,6 @@ ul li a:hover, ul li a:focus, ul li a:active {
   position: relative;
   float: left;
   width: 100%;
-  background-color: grey;
   -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); }
 

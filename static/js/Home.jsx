@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Router, browserHistory } from 'react-router';
 import { BrowserRouter, Route, Link } from 'react-router-dom'
-import Hello from "./Hello";
+import Galleries from "./Galleries";
 require('../css/style.css');
 
 
@@ -9,18 +9,62 @@ require('../css/style.css');
 class Home extends Component {
   render() {
     return (
-      <div>
-        <div className="card">
-          <img className="card-img-top" src="../img/person_2.jpg" alt="Card image cap"/>
-          <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="/hello">Hello 222</a>
-                <li><Link to="/hello">Hello</Link></li>
-            <a href="#" className="btn btn-primary">Go somewhere</a>
+      <section>
+
+        <div className="container intro">
+          <h2>Some of my work</h2>
+          <p>Here you can checkout some of my work that goes from designer (industrial design, posters, concept design, etc), Full-Stack Website developer and video and photography works.</p>
+        </div>
+
+
+        <div className="container sections">
+          <div className="text-wrapper">
+            <h3 className="works-title">Designer</h3>
+            <p>Creative designer with numeours pieces. Different media like digital, 3D, traditional, watercolor, acrylics, etc.</p>
+            <p></p>
+            <button type="button" className="btn btn-outline-primary">Gallery</button>
+          </div>
+          <div className="image-wrapper">
+            <img src="./dist/img/isometric.png" alt="work1" className="work-image"/>
+          </div>
+
+        </div>
+
+
+        <div className="container sections">
+          <div className="image-wrapper">
+            <img src="./dist/img/code.png" alt="work1" className="work-image"/>
+          </div>
+          <div className="text-wrapper-2">
+            <h3 className="works-title">Developer</h3>
+            <p>Fron-End and Back-End developer including databases, applications, APIs, etc. Knowledge in HTML, CSS, Javascript ( React, jQuery), Python, PostgreSQL, Ubuntu, Git, databases, Numpy, etc.</p>
+            <p>This website was made with Python and Flask for the Back-end and Fron-End with HTML, CSS and React.</p>
+            <ul>
+              <li>Full-Stack Web Developer: Amazon Lightsail, Flask, Log-Analysis, etc</li>
+              <li>Fron-End Web Developer: Google APIs, Games, React, etc.</li>
+              <li>Intro to Programming (Data analisis Specialisation).</li>
+            </ul>
+
+
+            <button type="button" className="btn btn-outline-primary">Projects</button>
           </div>
         </div>
-      </div>
+
+
+        <div  className="container sections">
+
+          <div className="text-wrapper">
+            <h3 className="works-title">Photography</h3>
+            <p>but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unkno.</p>
+            <button type="button" className="btn btn-outline-primary">Portfolio</button>
+          </div>
+          <div className="image-wrapper">
+            <img src="./dist/img/photo.jpg" alt="work1" className="work-image"/>
+          </div>
+        </div>
+
+      </section>
     );
   }
 }
