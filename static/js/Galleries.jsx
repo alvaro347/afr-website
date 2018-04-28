@@ -41,6 +41,9 @@ class Galleries extends Component {
           ))}
         </ul>
 
+
+
+
     </div>
   );
 }

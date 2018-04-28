@@ -9,11 +9,11 @@ require('../css/style.css');
 class Home extends Component {
   render() {
     return (
-      <section>
+      <section id="home-content">
 
         <div className="container intro">
-          <h2>Some of my work</h2>
-          <p>Here you can checkout some of my work that goes from designer (industrial design, posters, concept design, etc), Full-Stack Website developer and video and photography works.</p>
+          <h2 className="quote-title">Some of my work</h2>
+          <p className="quote-text">Here you can checkout some of my work that goes from designer (industrial design, posters, concept design, etc), Full-Stack Website developer and video and photography works.</p>
         </div>
 
 
@@ -21,7 +21,12 @@ class Home extends Component {
           <div className="text-wrapper">
             <h3 className="works-title">Designer</h3>
             <p>Creative designer with numeours pieces. Different media like digital, 3D, traditional, watercolor, acrylics, etc.</p>
-            <p></p>
+            <p>I have bee studying design in the school of Brendan Baeza for one year. Concept design, including vehicles, characters. Animated videos for a techonology company. Drawing and designing have been my favorite hobby.</p>
+            <ul>
+              <li>Concept Design</li>
+              <li>Illustrations</li>
+              <li>Animations</li>
+            </ul>
             <button type="button" className="btn btn-outline-primary">Gallery</button>
           </div>
           <div className="image-wrapper">
@@ -32,11 +37,13 @@ class Home extends Component {
 
 
         <div className="container sections">
-          <div className="image-wrapper">
+          <div className="image-wrapper-x">
             <img src="./dist/img/code.png" alt="work1" className="work-image"/>
           </div>
           <div className="text-wrapper-2">
+            
             <h3 className="works-title">Developer</h3>
+
             <p>Fron-End and Back-End developer including databases, applications, APIs, etc. Knowledge in HTML, CSS, Javascript ( React, jQuery), Python, PostgreSQL, Ubuntu, Git, databases, Numpy, etc.</p>
             <p>This website was made with Python and Flask for the Back-end and Fron-End with HTML, CSS and React.</p>
             <ul>
@@ -47,6 +54,10 @@ class Home extends Component {
 
 
             <button type="button" className="btn btn-outline-primary">Projects</button>
+
+            <div className="image-wrapper-2">
+              <img src="./dist/img/code.png" alt="work1" className="work-image"/>
+            </div>
           </div>
         </div>
 

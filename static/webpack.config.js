@@ -24,18 +24,10 @@ const config = {
       },
       {
         test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
-      },
-      {
-        test: /\.scss$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader'
-        ]
+        use: ExtractTextPlugin.extract({
+          fallback: "style-loader",
+          use: "css-loader"
+        })
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
@@ -48,10 +40,10 @@ const config = {
       }
     ]
   },
-  // plugins: [
-  //   new ExtractTextPlugin('css/[name].css'),
-  //
-  // ]
+  plugins: [
+    new ExtractTextPlugin('css/[name].css'),
+
+  ]
 };
 
 module.exports = config;
