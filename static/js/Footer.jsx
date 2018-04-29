@@ -23,7 +23,6 @@ class Header extends Component {
               <li className="social-icon"><a href="https://www.instagram.com/alvarogna/">Contact</a></li>
               <li className="social-icon"><a href="https://alvaro347.deviantart.com">About</a></li>
               <li className="social-icon"><a href="https://www.linkedin.com/in/alvaro-fernandez-rodriguez/">Portfolio</a></li>
-              <li className="social-icon"><a href="https://github.com/alvaro347"><i className="fab fa-github-square footer-icon"></i></a></li>
             </ul>
           </div>
 

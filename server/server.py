@@ -42,9 +42,7 @@ def catch_all(path):
 #     return render_template('index.html')
 
 
-@app.route('/developer')
-def developer():
-    return render_template('developer.html')
+
 
 # @app.route('/hello')
 # def hello():

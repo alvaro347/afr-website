@@ -14,7 +14,6 @@ body {
 .nav-bar {
   background-color: rgba(186, 186, 186, 0.5);
   z-index: 1009;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   position: absolute;
   padding: 28px 0;
   width: 100%;
@@ -257,9 +256,13 @@ ul li a:hover, ul li a:focus, ul li a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin: auto;
+  width: 90%; }
 
 .social-text {
   width: 30%; }
@@ -269,12 +272,11 @@ ul li a:hover, ul li a:focus, ul li a:active {
   padding: 0; }
 
 .footer-social {
-  width: 30%;
   right: 0; }
 
 .footer-links {
-  width: 30%;
-  margin: 0 10px; }
+  margin-left: 8%;
+  margin-right: 6%; }
 
 .footer-icon {
   font-size: 30px; }
@@ -305,7 +307,8 @@ ul li a:hover, ul li a:focus, ul li a:active {
 #contact {
   background: #d1d1d1;
   text-align: center;
-  padding: 100px; }
+  padding: 100px;
+  margin-top: 30px; }
 
 .burger-button {
   display: none; }
@@ -335,6 +338,144 @@ ul li a:hover, ul li a:focus, ul li a:active {
 
 .activate {
   display: none; }
+
+.card {
+  margin-top: 20px;
+  width: 300px;
+  margin: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3); }
+
+.card-img-container {
+  width: 300px;
+  height: 250px;
+  overflow: hidden; }
+
+.card-text {
+  padding: 20px; }
+
+.card-img {
+  width: 100%; }
+
+.dev-intro {
+  clear: both;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 400px;
+  color: white;
+  padding: 200px; }
+
+.super {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  z-index: -1; }
+
+.dev-skills-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0; }
+
+.dev-icon {
+  width: 80px; }
+
+.dev-skills-list li {
+  width: 150px;
+  margin: 20px;
+  text-align: center;
+  padding: 0; }
+
+.skills-container {
+  margin: 30px auto;
+  width: 60%; }
+
+.dev-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 50px; }
+
+.selection {
+  margin-top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%; }
+
+.gallery {
+  width: 100%; }
+
+.gallery:hover {
+  border: 1px solid #777; }
+
+.gallery img {
+  width: 100%;
+  height: auto; }
+
+.desc {
+  padding: 15px;
+  text-align: center; }
+
+.image-gallery {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.about-card {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  width: 60%;
+  margin: 0 auto; }
+
+.about-img-container {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-right: 50px;
+  margin-right: 20px; }
+
+.about-img {
+  width: 100%; }
+
+.gap {
+  height: 100px; }
 @media (max-width: 750px) {
   .sections {
     display: block;
@@ -399,8 +540,15 @@ ul li a:hover, ul li a:focus, ul li a:active {
   #contact {
     background: #d1d1d1;
     text-align: center;
-    padding: 20px;
-    margin-top: 30px; } }
+    padding: 20px; }
+  .footer-links {
+    margin: 0 auto; }
+  .footer-social {
+    margin: 0 auto; }
+  .footer-text {
+    margin: 0 auto; }
+  .dev-intro {
+    padding: 180px 5px; } }
 
 @media screen and (max-width: 800px) {
   .burger-button {
@@ -422,7 +570,8 @@ ul li a:hover, ul li a:focus, ul li a:active {
   .logo {
     margin: 10px; }
   .activate {
-    display: block; }
+    display: inline-block;
+    width: 100%; }
   .dec {
     display: none; }
   .nav-menu {

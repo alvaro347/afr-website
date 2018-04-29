@@ -62,8 +62,15 @@
   #contact {
     background: #d1d1d1;
     text-align: center;
-    padding: 20px;
-    margin-top: 30px; } }
+    padding: 20px; }
+  .footer-links {
+    margin: 0 auto; }
+  .footer-social {
+    margin: 0 auto; }
+  .footer-text {
+    margin: 0 auto; }
+  .dev-intro {
+    padding: 180px 5px; } }
 
 @media screen and (max-width: 800px) {
   .burger-button {
@@ -85,7 +92,8 @@
   .logo {
     margin: 10px; }
   .activate {
-    display: block; }
+    display: inline-block;
+    width: 100%; }
   .dec {
     display: none; }
   .nav-menu {

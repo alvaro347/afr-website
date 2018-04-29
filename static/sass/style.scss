@@ -1,5 +1,6 @@
 $primary-color: rgba(0,0,0,0.2);
 $img-path: "./~/../img/";
+$basic-shadow: 0 5px 5px rgba(0,0,0,0.3);
 
 * {box-sizing: border-box;}
 
@@ -23,7 +24,7 @@ body {
 .nav-bar {
   background-color: rgba(186, 186, 186, 0.5);
   z-index: 1009;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  // border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   position:absolute;
   padding: 28px 0;
   width: 100%;
@@ -292,8 +293,10 @@ ul li a:hover, ul li a:focus, ul li a:active {
 
 .footer-content {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-
+  margin: auto;
+  width: 90%;
 }
 
 .social-text {
@@ -305,13 +308,14 @@ ul li a:hover, ul li a:focus, ul li a:active {
 }
 
 .footer-social {
-  width: 30%;
+
   right: 0;
 }
 
 .footer-links {
-  width: 30%;
-margin: 0 10px;
+  margin-left: 8%;
+  margin-right: 6%;
+
 }
 
 .footer-icon {
@@ -357,6 +361,7 @@ margin: 0 10px;
   background: rgb(209, 209, 209);
   text-align: center;
   padding: 100px;
+  margin-top: 30px;
 }
 
 
@@ -393,4 +398,176 @@ margin: 0 10px;
 
 .activate {
   display: none;
+}
+
+
+
+
+// Card style
+
+.card {
+  margin-top: 20px;
+  width: 300px;
+  margin: 20px;
+  // border: 2px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: $basic-shadow;
+}
+
+.card-img-container {
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.card-text {
+  padding: 20px;
+}
+
+.card-img {
+  width: 100%;
+}
+
+
+
+// developer
+
+.dev-intro {
+  clear: both;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 400px;
+  color: white;
+  padding:200px;
+}
+
+.dev-container {
+  // background-image: url(../img/code.png);
+
+}
+
+.super {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  z-index: -1;
+}
+
+.dev-skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+.dev-icon {
+  width: 80px;
+}
+
+.dev-skills-list li {
+  width: 150px;
+  margin: 20px;
+  text-align: center;
+  padding: 0;
+}
+
+.skills-container {
+  margin: 30px auto;
+  width: 60%;
+
+}
+
+.dev-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.selection {
+  margin-top: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+
+// gallery
+
+.gallery {
+  // margin: 5px;
+  // border: 1px solid #ccc;
+  // float: left;
+  // min-width: 300px;
+  // width: 50%;
+  width: 100%
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.image-gallery {
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  justify-content: center;
+}
+
+// about
+
+
+
+.about-card {
+  // position: absolute;
+  clear: both;
+  // margin-top: 100px;
+  // margin-bottom: 200px;
+  display: flex;
+flex-wrap: wrap;
+  padding: 20px;
+  // justify-content: center;
+  background: white;
+  border-radius: 5px;
+  box-shadow: $basic-shadow;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.about-img-container {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-right: 50px;
+  margin-right: 20px;
+
+}
+
+.about-text {
+
+}
+
+.about-img {
+  width: 100%;
+
+}
+
+.gap {
+  height: 100px;
 }

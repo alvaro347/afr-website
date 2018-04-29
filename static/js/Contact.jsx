@@ -21,7 +21,7 @@ class Contact extends Component {
             </div>
             <div className="form-group">
               <label htmlFor="exampleInputEmail1">Your e-mail:</label>
-              <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your e-mail"/>
+              <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="" placeholder="Your e-mail"/>
             </div>
 
 
