@@ -11,20 +11,38 @@ body {
 .img {
   width: 100%; }
 
+#header {
+  position: fixed;
+  top: 0;
+  z-index: 4000;
+  width: 100%; }
+
 .nav-bar {
   background-color: rgba(186, 186, 186, 0.5);
   z-index: 1009;
-  position: absolute;
-  padding: 28px 0;
+  padding: 20px 0px;
   width: 100%;
   z-index: 1001;
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 70px; }
 
 .nav-list {
-  margin: 0;
   right: 0;
-  position: absolute;
-  margin-right: 10%; }
+  margin-right: 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  float: right;
+  padding: 0;
+  -webkit-transition: 0;
+  transition: 0; }
+
+.menu {
+  height: 350px;
+  z-index: 3000;
+  display: block; }
 
 .menu-icon {
   font-size: 14px;
@@ -32,23 +50,6 @@ body {
 
 .nav-item {
   margin-right: 5px; }
-
-ul li.has-dropdown .dropdown {
-  width: 160px;
-  -webkit-box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
-  z-index: 1003;
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  top: 40px;
-  left: 0;
-  text-align: left;
-  background: #000;
-  padding: 20px;
-  border-radius: 4px;
-  -webkit-transition: 0s;
-  transition: 0s; }
 
 .nav-item, .social-icon {
   padding: 0;
@@ -59,11 +60,9 @@ ul li.has-dropdown .dropdown {
 .logo {
   width: 100px; }
 
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px; }
+.logo-container {
+  margin-left: 6%;
+  float: left; }
 
 .animated-fast {
   -webkit-animation-duration: .5s;
@@ -176,7 +175,7 @@ ul li a {
   -webkit-transition: 0.5s;
   transition: 0.5s; }
 
-a {
+.nav-item Link {
   padding: 5px 10px;
   color: #fff;
   text-decoration: none; }
@@ -185,28 +184,21 @@ ul li a:hover, ul li a:focus, ul li a:active {
   color: white;
   text-decoration: none; }
 
-.header {
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  position: relative; }
-
-.cover {
+#showcase {
+  overflow: hidden;
   height: 700px;
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  position: relative;
-  float: left;
-  width: 100%;
-  background-image: url(img/capsula.png);
   -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); }
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 100%;
+  margin-top: -60px; }
 
 .cover-img {
-  width: 100%; }
+  height: 100%;
+  right: 300px;
+  position: relative; }
 
-.sections {
+.work {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,26 +274,20 @@ ul li a:hover, ul li a:focus, ul li a:active {
   font-size: 30px; }
 
 #portrait {
-  height: 200px;
-  margin: 0 auto;
+  height: 250px;
+  width: 250px;
+  margin: 50px auto;
   clear: both;
-  position: relative;
-  top: -100px;
   overflow: hidden;
+  border-radius: 150px;
   text-align: center; }
 
 .portrait-img {
-  border-radius: 100px;
-  width: 190px;
-  height: 190px;
-  vertical-align: text-top;
-  border: 5px solid white; }
+  width: 100%; }
 
 .intro {
   text-align: center;
   width: 60%;
-  clear: both;
-  margin-top: -50px;
   margin-bottom: 50px; }
 
 #contact {
@@ -321,23 +307,6 @@ ul li a:hover, ul li a:focus, ul li a:active {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 2px; }
-
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-          transform: rotate(-45deg) translate(-9px, 6px); }
-
-.change .bar2 {
-  opacity: 0; }
-
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-          transform: rotate(45deg) translate(-8px, -8px); }
-
-.dec {
-  display: none; }
-
-.activate {
-  display: none; }
 
 .card {
   margin-top: 20px;
@@ -423,14 +392,35 @@ ul li a:hover, ul li a:focus, ul li a:active {
   width: 100%; }
 
 .gallery {
-  width: 100%; }
+  margin-top: 50px; }
 
-.gallery:hover {
-  border: 1px solid #777; }
-
-.gallery img {
+.gallery-imgs {
+  border: 2px solid #ccc;
+  margin: 10px auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
-  height: auto; }
+  padding: 5px; }
+
+.gallery-imgs:hover {
+  border: 2px solid #777; }
+
+.gallery-imgs {
+  width: 85%;
+  height: auto;
+  overflow: hidden; }
+
+.gallery-img {
+  width: 100%;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
 
 .desc {
   padding: 15px;
@@ -448,6 +438,51 @@ ul li a:hover, ul li a:focus, ul li a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+
+.gallery-card {
+  margin: 20px;
+  list-style: none; }
+
+.galleries-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  margin-top: 50px; }
+
+.middle {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  text-align: center; }
+
+.gallery-imgs:hover .middle {
+  opacity: 1; }
+
+.text {
+  background-color: rgba(0, 0, 0, 0.42);
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
 
 .about-card {
   clear: both;
@@ -477,7 +512,7 @@ ul li a:hover, ul li a:focus, ul li a:active {
 .gap {
   height: 100px; }
 @media (max-width: 750px) {
-  .sections {
+  .work {
     display: block;
     padding-bottom: 20px;
     clear: both;
@@ -515,7 +550,7 @@ ul li a:hover, ul li a:focus, ul li a:active {
     border-radius: 5px;
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
             box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); }
-  .cover {
+  #showcase {
     height: 400px; }
   .intro {
     padding: 0px;
@@ -523,12 +558,9 @@ ul li a:hover, ul li a:focus, ul li a:active {
     margin-bottom: 80px;
     margin-top: -30px; }
   #portrait {
-    background-color: transparent;
-    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    border: 0px; }
-  .portrait-img {
-    border: 5px solid white; }
+    height: 200px;
+    width: 200px;
+    border-radius: 100px; }
   #home-content {
     clear: both; }
   .quote-title {
@@ -550,33 +582,48 @@ ul li a:hover, ul li a:focus, ul li a:active {
   .dev-intro {
     padding: 180px 5px; } }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 890px) {
   .burger-button {
     display: inline-block;
     right: 10%;
     position: absolute; }
-  #menu2 {
+  .menu1 {
     clear: both;
-    height: 250px;
+    height: 350px;
     z-index: 3000;
-    background-color: rgba(0, 0, 0, 0.6);
-    margin-top: 85px; }
-  #menu1 {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: inline-block;
+    width: 100%;
+    margin-top: 17px;
+    -webkit-transition: 0s;
+    transition: 0s; }
+  .menu {
     display: none; }
-  .menu-2 {
-    display: block; }
   .nav-bar {
     padding: 20px 0; }
+  .bar1 {
+    margin-top: 0; }
+  .bar3 {
+    margin-bottom: 0; }
   .logo {
-    margin: 10px; }
-  .activate {
-    display: inline-block;
-    width: 100%; }
-  .dec {
-    display: none; }
-  .nav-menu {
-    margin-top: 120px;
-    margin: 0 auto;
-    padding: 30px;
+    margin-left: 10px; }
+  .nav-item a {
+    font-size: 25px; }
+  .nav-item i {
+    font-size: 25px; }
+  .nav-list {
+    text-align: center;
+    float: none;
+    margin-top: 30px;
+    display: block;
+    width: 100%;
     font-size: 30px;
-    list-style: none; } }
+    list-style: none; }
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px); }
+  .change .bar2 {
+    opacity: 0; }
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px); } }

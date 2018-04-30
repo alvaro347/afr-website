@@ -21,24 +21,49 @@ body {
 
 // Navigation
 
+
+
+#header {
+  position: fixed;
+  top: 0;
+  z-index: 4000;
+  width: 100%;
+}
+
 .nav-bar {
   background-color: rgba(186, 186, 186, 0.5);
   z-index: 1009;
   // border-bottom: 1px solid rgba(255, 255, 255, 0.6);
-  position:absolute;
-  padding: 28px 0;
+
+  padding: 20px 0px;
   width: 100%;
   z-index: 1001;
-  background-color: rgba(0, 0, 0, 0.5);
+  // display: flex;
+  // flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 70px;
+
 }
 
 .nav-list {
-  margin: 0;
   right: 0;
-  position: absolute;
-  margin-right: 10%;
+  margin-right: 4%;
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+  padding: 0;
+  transition: 0;
 }
 
+
+
+.menu {
+  height: 350px;
+  z-index: 3000;
+  display: block;
+  // width: 100%;
+  // margin-top: 0px;
+}
 
 
 .menu-icon {
@@ -51,21 +76,21 @@ body {
 }
 
 
-ul li.has-dropdown .dropdown {
-  width: 160px;
-  box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
-  z-index: 1003;
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  top: 40px;
-  left: 0;
-  text-align: left;
-  background: #000;
-  padding: 20px;
-  border-radius: 4px;
-  transition: 0s;
-}
+// ul li.has-dropdown .dropdown {
+//   width: 160px;
+//   box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
+//   z-index: 1003;
+//   visibility: hidden;
+//   opacity: 0;
+//   position: absolute;
+//   top: 40px;
+//   left: 0;
+//   text-align: left;
+//   background: #000;
+//   padding: 20px;
+//   border-radius: 4px;
+//   transition: 0s;
+// }
 
 
 .nav-item, .social-icon {
@@ -79,14 +104,13 @@ ul li.has-dropdown .dropdown {
   width: 100px;
 }
 
-
-
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+.logo-container {
+  margin-left: 6%;
+  float: left;
 }
+
+
+
 
 .animated-fast {
   animation-duration: .5s;
@@ -181,7 +205,6 @@ ul li.has-dropdown:hover a, ul li.has-dropdown:focus a {
   color: #fff;
 }
 
-
 ul li a {
   font-size: 13px;
   // padding: 30px 15px;
@@ -191,7 +214,7 @@ ul li a {
   transition: 0.5s;
 }
 
-a {
+.nav-item Link {
   padding: 5px 10px;
   color: #fff;
   text-decoration: none;
@@ -202,33 +225,26 @@ ul li a:hover, ul li a:focus, ul li a:active {
 }
 //
 
-.header {
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-
-.cover {
+#showcase {
+  overflow: hidden;
   height: 700px;
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  position: relative;
-  float: left;
-  width: 100%;
-  background-image: url(../img/capsula.png);
   box-shadow: 0 0 30px rgba(0,0,0,0.5);
+  text-align: center;
+  width: 100%;
+  margin-top: -60px;
 }
+
 
 .cover-img {
-  width: 100%;
+  height: 100%;
+  right: 300px;
+  position: relative;
 }
 
 
 // section
-.sections {
+
+.work {
   display: flex;
   padding-bottom: 100px;
   clear: both;
@@ -325,34 +341,26 @@ ul li a:hover, ul li a:focus, ul li a:active {
 
 
 #portrait {
-  // width: 80%;
-  height: 200px;
-  margin: 0 auto;
+  height: 250px;
+  width: 250px;
+  margin: 50px auto;
   clear: both;
-  position: relative;
-  top: -100px;
   overflow: hidden;
   // border: 2px solid grey;
-  // border-radius: 10px;
+  border-radius: 150px;
   // background: white;
   text-align: center;
-  // box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+
 }
 
 .portrait-img {
-  border-radius: 100px;
-  width: 190px;
-  height: 190px;
-  // border: 2px solid grey;
-  vertical-align: text-top;
-  border: 5px solid white;
+  width: 100%;
 }
 
 .intro {
   text-align: center;
   width: 60%;
-  clear: both;
-  margin-top: -50px;
+
   margin-bottom: 50px;
 }
 
@@ -381,24 +389,7 @@ ul li a:hover, ul li a:focus, ul li a:active {
   border-radius: 2px;
 }
 
-.change .bar1 {
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
 
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-
-  transform: rotate(45deg) translate(-8px, -8px);
-}
-
-.dec {
-  display: none;
-}
-
-.activate {
-  display: none;
-}
 
 
 
@@ -444,10 +435,7 @@ ul li a:hover, ul li a:focus, ul li a:active {
   padding:200px;
 }
 
-.dev-container {
-  // background-image: url(../img/code.png);
 
-}
 
 .super {
   position: absolute;
@@ -499,21 +487,43 @@ ul li a:hover, ul li a:focus, ul li a:active {
 // gallery
 
 .gallery {
+  margin-top: 50px;
+  // margin: 30px auto;
+}
+
+.gallery-imgs {
   // margin: 5px;
-  // border: 1px solid #ccc;
+  border: 2px solid #ccc;
   // float: left;
   // min-width: 300px;
   // width: 50%;
-  width: 100%
+  margin: 10px auto;
+  justify-content: center;
+  width: 100%;
+  padding: 5px;
 }
 
-.gallery:hover {
-  border: 1px solid #777;
+.gallery-imgs:hover {
+  border: 2px solid #777;
+
 }
 
-.gallery img {
+.gallery-imgs {
+  width: 85%;
+  height: auto;
+  overflow: hidden;
+}
+.gallery-img {
+  width: 100%;
+
+
+  opacity: 1;
+  display: block;
   width: 100%;
   height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
 }
 
 .desc {
@@ -530,6 +540,53 @@ ul li a:hover, ul li a:focus, ul li a:active {
   justify-content: center;
 }
 
+.gallery-card {
+  margin: 20px;
+  list-style: none
+
+}
+
+.galleries-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin-top: 50px;
+}
+
+
+.middle {
+  transition: .5s ease;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  // left: 50%;
+  // transform: translate(-50%,/ -50%);
+  text-align: center;
+}
+
+.gallery-imgs:hover .middle{
+  opacity: 1;
+}
+
+.text {
+  background-color: rgba(#000000, 0.42);
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 // about
 
 
@@ -540,7 +597,7 @@ ul li a:hover, ul li a:focus, ul li a:active {
   // margin-top: 100px;
   // margin-bottom: 200px;
   display: flex;
-flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 20px;
   // justify-content: center;
   background: white;
@@ -559,9 +616,7 @@ flex-wrap: wrap;
 
 }
 
-.about-text {
 
-}
 
 .about-img {
   width: 100%;
