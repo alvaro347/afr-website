@@ -12,24 +12,24 @@ class Header extends Component {
 
         <div className="footer-content">
 
-          <div className="footer-text">
-            <a href="#" className="footer-text" >&copy; 2018 Alvaro Fernandez (AFR)</a>
+          <div>
+            <Link to="/" className="footer-text" >&copy; 2018 Alvaro Fernandez (AFR)</Link>
           </div>
 
           <div className="footer-links">
             <ul className="social-list">
-              <li className="social-icon"><a href="https://www.instagram.com/alvarogna/">Contact</a></li>
-              <li className="social-icon"><a href="https://alvaro347.deviantart.com">About</a></li>
-              <li className="social-icon"><a href="https://www.linkedin.com/in/alvaro-fernandez-rodriguez/">Portfolio</a></li>
+              <li className="social-icon"><Link to="/about">Contact</Link></li>
+              <li className="social-icon"><Link to="/about">About</Link></li>
+              <li className="social-icon"><Link to="/portfolio">Portfolio</Link></li>
             </ul>
           </div>
 
           <div className="footer-social">
             <ul className="social-list">
-              <li className="social-icon"><a href="https://www.instagram.com/alvarogna/"><i className="fab fa-instagram footer-icon"></i></a></li>
-              <li className="social-icon"><a href="https://alvaro347.deviantart.com"><i className="fab fa-deviantart footer-icon"></i></a></li>
-              <li className="social-icon"><a href="https://www.linkedin.com/in/alvaro-fernandez-rodriguez/"><i className="fab fa-linkedin footer-icon"></i></a></li>
-              <li className="social-icon"><a href="https://github.com/alvaro347"><i className="fab fa-github-square footer-icon"></i></a></li>
+              <li className="social-icon"><Link to="https://www.instagram.com/alvarogna/"><i className="fab fa-instagram footer-icon"></i></Link></li>
+              <li className="social-icon"><Link to="https://alvaro347.deviantart.com"><i className="fab fa-deviantart footer-icon"></i></Link></li>
+              <li className="social-icon"><Link to="https://www.linkedin.com/in/alvaro-fernandez-rodriguez/"><i className="fab fa-linkedin footer-icon"></i></Link></li>
+              <li className="social-icon"><Link to="https://github.com/alvaro347"><i className="fab fa-github-square footer-icon"></i></Link></li>
             </ul>
           </div>
 

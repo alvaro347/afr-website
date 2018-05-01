@@ -39,6 +39,11 @@ body {
   -webkit-transition: 0;
   transition: 0; }
 
+.nav-link-active {
+  color: white;
+  display: block;
+  padding: .5rem 1rem; }
+
 .menu {
   height: 350px;
   z-index: 3000;
@@ -254,7 +259,10 @@ ul li a:hover, ul li a:focus, ul li a:active {
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
-  width: 90%; }
+  width: 90%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .social-text {
   width: 30%; }
@@ -272,6 +280,11 @@ ul li a:hover, ul li a:focus, ul li a:active {
 
 .footer-icon {
   font-size: 30px; }
+
+.social-icon, .footer-text, .social-list {
+  padding: 5px 10px;
+  color: #fff;
+  text-decoration: none; }
 
 #portrait {
   height: 250px;

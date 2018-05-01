@@ -55,6 +55,12 @@ body {
   transition: 0;
 }
 
+.nav-link-active {
+  color: white;
+  display: block;
+  padding: .5rem 1rem;
+}
+
 
 
 .menu {
@@ -313,6 +319,7 @@ ul li a:hover, ul li a:focus, ul li a:active {
   align-items: center;
   margin: auto;
   width: 90%;
+  justify-content: center;
 }
 
 .social-text {
@@ -324,18 +331,23 @@ ul li a:hover, ul li a:focus, ul li a:active {
 }
 
 .footer-social {
-
   right: 0;
 }
 
 .footer-links {
   margin-left: 8%;
   margin-right: 6%;
-
 }
 
 .footer-icon {
   font-size: 30px;
+  // margin-left: 20px;
+}
+
+.social-icon, .footer-text, .social-list {
+  padding: 5px 10px;
+  color: #fff;
+  text-decoration: none;
 }
 
 
@@ -617,6 +629,12 @@ ul li a:hover, ul li a:focus, ul li a:active {
 }
 
 
+
+
+// .active {
+//   background: white;
+//   font-size: 40px;
+// }
 
 .about-img {
   width: 100%;

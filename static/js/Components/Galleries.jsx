@@ -8,12 +8,28 @@ import Gallery from './Sub/Gallery'
 class Galleries extends Component {
   constructor() {
     super();
+    this.handleChange = this.handleChange.bind(this);
+
     this.state = {
       error: null,
       isLoaded: false,
-      items: []
+      items: [],
+      gallery: 'all',
+      active: 'btn btn-secondary active',
+      notactive: 'btn btn-secondary'
     };
   }
+
+  handleChange(event) {
+
+    this.setState({
+      gallery: event.target.value
+    });
+
+  }
+
+
+
 
   componentDidMount() {
     fetch("http://localhost:3000/hello/json")
@@ -25,7 +41,6 @@ class Galleries extends Component {
           items: result.galleries
         });
       })
-
     }
 
     render() {
@@ -45,65 +60,92 @@ class Galleries extends Component {
     </div> */}
 
 
-          <img src="./dist/img/capsula.png" className="super"/>
+    <img src="./dist/img/capsula.png" className="super"/>
 
 
-          <div className="dev-intro">
-            <h2>Designer information</h2>
+    <div className="dev-intro">
+      <h2>Designer information</h2>
 
-            <p>SLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem </p>
-
-
-          </div>
-
-          <div>
-
-            <ul className="galleries-list">
-
-              <Gallery />
-              <Gallery />
-              <Gallery />
-
-            </ul>
-
-          </div>
+      <p>SLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem </p>
 
 
-          <hr className="container"/>
+    </div>
 
-          <div className="btn-group btn-group-toggle selection" data-toggle="buttons">
-            <label className="btn btn-secondary">
-              <input type="radio" name="options" id="option3" autoComplete="off" defaultChecked /> All
-            </label>
-            <label className="btn btn-secondary active">
+    <div>
 
-              <input type="radio" name="options" id="option1" autoComplete="off" /> Digital
-            </label>
-            <label className="btn btn-secondary">
-              <input type="radio" name="options" id="option2" autoComplete="off" /> Traditional
-            </label>
-            <label className="btn btn-secondary">
-              <input type="radio" name="options" id="option3" autoComplete="off" /> 3D
-            </label>
-          </div>
+      <ul className="galleries-list">
 
-          <div className="gallery">
-            <Image />
-            <Image />
-            <Image />
-            <Image />
-          </div>
+        <Gallery />
+        <Gallery />
+        <Gallery />
+
+      </ul>
+
+    </div>
 
 
+    <hr className="container"/>
+
+    <div className="btn-group btn-group-toggle selection" data-toggle="buttons">
+
+      <label className={ this.state.gallery === "all" ? this.state.active : this.state.notactive }>
+        <input
+          type="radio"
+          value="all"
+          id="option1"
+          checked={this.state.gallery === "all"}
+          onClick={this.handleChange}
+        /> All
+      </label>
+
+      <label className={ this.state.gallery === "digital" ? this.state.active : this.state.notactive }>
+        <input
+          type="radio"
+          value="digital"
+          checked={this.state.gallery === "digital"}
+          onClick={this.handleChange}
+          id="option2"
+        /> Digital
+      </label>
+
+      <label className={ this.state.gallery === "traditional" ? this.state.active : this.state.notactive }>
+        <input
+          type="radio"
+          value="traditional"
+          id="option3"
+          checked={this.state.gallery === "traditional"}
+          onClick={this.handleChange}
+        /> Traditional
+      </label>
+
+      <label className={ this.state.gallery === "3d" ? this.state.active : this.state.notactive }>
+        <input
+          type="radio"
+          value="3d"
+          id="option4"
+          checked={this.state.gallery === "3d"}
+          onClick={this.handleChange}
+        /> 3D
+      </label>
+    </div>
+
+    <div className="gallery">
+      <Image />
+      <Image />
+      <Image />
+      <Image />
+    </div>
 
 
 
 
-        </section>
-      );
-    }
-  }
+
+
+  </section>
+);
+}
+}
 
 
 
-  export default Galleries;
+export default Galleries;

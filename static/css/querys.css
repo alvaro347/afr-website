@@ -69,6 +69,11 @@
   .dev-intro {
     padding: 180px 5px; } }
 
+@media screen and (min-width: 850px) and (max-width: 1100px) {
+  .footer-links {
+    margin-left: 6%;
+    margin-right: 4%; } }
+
 @media screen and (max-width: 890px) {
   .burger-button {
     display: inline-block;
