@@ -41,7 +41,7 @@ class Header extends Component {
 
 
           <div className="logo-container">
-            <Link to="/"><img src="./dist/css/img/logo.png" alt="Home Page" className="logo"/></Link>
+            <Link to="/"><img src="./dist/img/logo.png" alt="Home Page" className="logo"/></Link>
           </div>
 
 

@@ -3,20 +3,21 @@ import { Router, browserHistory } from 'react-router';
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 import Image from './Sub/Image'
 import Gallery from './Sub/Gallery'
+import Radio from './Sub/Radio'
 
 
 class Galleries extends Component {
   constructor() {
     super();
     this.handleChange = this.handleChange.bind(this);
-
     this.state = {
       error: null,
       isLoaded: false,
       items: [],
       gallery: 'all',
       active: 'btn btn-secondary active',
-      notactive: 'btn btn-secondary'
+      notactive: 'btn btn-secondary',
+      galleries: ['All', 'Digital', 'Traditional', '3D']
     };
   }
 
@@ -39,6 +40,7 @@ class Galleries extends Component {
         this.setState({
           isLoaded: true,
           items: result.galleries
+
         });
       })
     }
@@ -59,8 +61,8 @@ class Galleries extends Component {
 
     </div> */}
 
+<div className="cover-cont">  <img src="./dist/img/capsula.jpg" className="cover"/></div>
 
-    <img src="./dist/img/capsula.png" className="super"/>
 
 
     <div className="dev-intro">
@@ -73,7 +75,7 @@ class Galleries extends Component {
 
     <div>
 
-      <ul className="galleries-list">
+      <ul className="dev-cards">
 
         <Gallery />
         <Gallery />
@@ -94,7 +96,8 @@ class Galleries extends Component {
           value="all"
           id="option1"
           checked={this.state.gallery === "all"}
-          onClick={this.handleChange}
+          onChange={this.handleChange}
+
         /> All
       </label>
 
@@ -103,7 +106,7 @@ class Galleries extends Component {
           type="radio"
           value="digital"
           checked={this.state.gallery === "digital"}
-          onClick={this.handleChange}
+          onChange={this.handleChange}
           id="option2"
         /> Digital
       </label>
@@ -114,7 +117,7 @@ class Galleries extends Component {
           value="traditional"
           id="option3"
           checked={this.state.gallery === "traditional"}
-          onClick={this.handleChange}
+          onChange={this.handleChange}
         /> Traditional
       </label>
 
@@ -124,10 +127,26 @@ class Galleries extends Component {
           value="3d"
           id="option4"
           checked={this.state.gallery === "3d"}
-          onClick={this.handleChange}
+          onChange={this.handleChange}
         /> 3D
       </label>
     </div>
+
+
+    {/* <div className="btn-group btn-group-toggle selection" data-toggle="buttons">
+
+      { this.state.galleries.map((gallery) => (
+        <Radio
+          active = {this.state.active}
+          notactive = {this.state.notactive}
+          array={ gallery }
+          key= { gallery }
+          item = {this.state.gallery }
+        />
+      ))}
+
+    </div> */}
+
 
     <div className="gallery">
       <Image />

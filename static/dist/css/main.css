@@ -45,7 +45,6 @@ body {
   padding: .5rem 1rem; }
 
 .menu {
-  height: 350px;
   z-index: 3000;
   display: block; }
 
@@ -352,13 +351,18 @@ ul li a:hover, ul li a:focus, ul li a:active {
   background-color: rgba(0, 0, 0, 0.8);
   height: 400px;
   color: white;
-  padding: 200px; }
+  padding: 150px; }
 
-.super {
-  position: absolute;
+.cover {
+  margin: auto;
   width: 100%;
-  height: 400px;
   z-index: -1; }
+
+.cover-cont {
+  overflow: hidden;
+  z-index: -1;
+  position: absolute;
+  height: 400px; }
 
 .dev-skills-list {
   list-style: none;
@@ -373,17 +377,18 @@ ul li a:hover, ul li a:focus, ul li a:active {
   padding: 0; }
 
 .dev-icon {
-  width: 80px; }
+  width: 80px;
+  margin-bottom: 20px; }
 
 .dev-skills-list li {
   width: 150px;
-  margin: 20px;
+  margin: 30px;
   text-align: center;
   padding: 0; }
 
 .skills-container {
   margin: 30px auto;
-  width: 60%; }
+  width: 90%; }
 
 .dev-cards {
   display: -webkit-box;

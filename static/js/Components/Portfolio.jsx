@@ -36,8 +36,11 @@ class Portfolio extends Component {
         <section id="portfolio">
 
 
+          <div className="cover-cont">
+            <img src="./dist/img/capsula.jpg" className="cover"/>
+          </div>
 
-          <img src="./dist/img/capsula.png" className="super"/>
+
           <div className="dev-container">
             <div className="dev-intro">
               <h2>Portolio information</h2>
@@ -79,11 +82,11 @@ class Portfolio extends Component {
 
 
 
-      </section>
-    );
+        </section>
+      );
+    }
   }
-}
 
 
 
-export default Portfolio;
+  export default Portfolio;

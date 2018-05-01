@@ -6,16 +6,17 @@ import { BrowserRouter, Route, Link } from 'react-router-dom'
 class Card extends Component {
 
   render() {
-
+const { title, info, img, link } = this.props
     return (
       <div className="card">
         <div className="card-img-container">
-          <Link to="#"><img src="./dist/img/code.png" className="card-img"/></Link>
+          <a href={ link }><img src={ img } className="card-img"/></a>
         </div>
 
         <div className="card-text">
-          <h2>Work</h2>
-          <Link to="#"><button type="button" className="btn btn-secondary">Link</button></Link>
+          <h2>{ title }</h2>
+          <p>{ info }</p>
+          <a href={ link }><button type="button" className="btn btn-secondary">Link</button></a>
         </div>
       </div>
     );
