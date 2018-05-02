@@ -57,7 +57,7 @@ class App extends Component {
           <div className='about-container'>
             <Header />
             <About />
-            <Contact />
+            {/* <Contact /> */}
             <Footer />
           </div>
         )}/>
@@ -66,7 +66,7 @@ class App extends Component {
           <div className='portfolio-container'>
             <Header />
             <Portfolio />
-            <Contact />
+            {/* <Contact /> */}
             <Footer />
           </div>
         )}/>

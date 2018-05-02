@@ -52,10 +52,10 @@ class Developer extends Component {
       return (
 
 
-        <section id="developer" className="">
+        <section id="developer">
           <div className='cover-cont'>
-             <img src="./dist/img/code.png" className="dev-cover"/>
-           </div>
+            <img src="./dist/img/code.png" className="cover"/>
+          </div>
 
           <div className="dev-container">
             <div className="dev-intro">
@@ -80,39 +80,39 @@ class Developer extends Component {
           <hr className="container"/>
 
           {/* <div className="btn-group btn-group-toggle selection" data-toggle="buttons">
-            <label className="btn btn-secondary active">
-              <input type="radio" name="options" id="option1"  /> Apps
-            </label>
-            <label className="btn btn-secondary">
-              <input type="radio" name="options" id="option2" /> Web
-            </label>
-            <label className="btn btn-secondary">
-              <input type="radio" name="options" id="option3"  /> Games
-            </label>
-          </div> */}
+          <label className="btn btn-secondary active">
+          <input type="radio" name="options" id="option1"  /> Apps
+        </label>
+        <label className="btn btn-secondary">
+        <input type="radio" name="options" id="option2" /> Web
+      </label>
+      <label className="btn btn-secondary">
+      <input type="radio" name="options" id="option3"  /> Games
+    </label>
+  </div> */}
 
-          <div className="dev-cards">
+  <div className="dev-cards">
 
-            { this.state.projects.map((project) => (
-              <Card
-                title = { project.title }
-                img = {project.img}
-                info = { project.info }
-                key = { project.title }
-                link = { project.link }
-              />
-            ))}
+    { this.state.projects.map((project) => (
+      <Card
+        title = { project.title }
+        img = {project.img}
+        info = { project.info }
+        key = { project.title }
+        link = { project.link }
+      />
+    ))}
 
-          </div>
-
-
-
-
-        </section>
-      );
-    }
-  }
+  </div>
 
 
 
-  export default Developer;
+
+</section>
+);
+}
+}
+
+
+
+export default Developer;

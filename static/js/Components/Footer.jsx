@@ -18,7 +18,7 @@ class Header extends Component {
 
           <div className="footer-links">
             <ul className="social-list">
-              <li className="social-icon"><Link to="/about">Contact</Link></li>
+              <li className="social-icon"><a href="https://www.youtube.com/channel/UCQ79F_bjrqNf8wKI5LVhFBA">Youtube</a></li>
               <li className="social-icon"><Link to="/about">About</Link></li>
               <li className="social-icon"><Link to="/portfolio">Portfolio</Link></li>
             </ul>

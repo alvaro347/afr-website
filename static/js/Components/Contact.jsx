@@ -11,7 +11,7 @@ class Contact extends Component {
       <section id="contact">
 
           <h2>About, Contact me</h2>
-          <p>I'm avialable for work. You can contact me in this form</p>
+          <p>I'm avialable for work. You can contact me at alvaro347@gmail.com</p>
           <hr/>
           <form>
             <div className="form-group">

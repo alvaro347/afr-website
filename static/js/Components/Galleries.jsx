@@ -17,7 +17,39 @@ class Galleries extends Component {
       gallery: 'all',
       active: 'btn btn-secondary active',
       notactive: 'btn btn-secondary',
-      galleries: ['All', 'Digital', 'Traditional', '3D']
+      galleries: ['All', 'Digital', 'Traditional', '3D'],
+      images: [
+        {
+          title: 'Google Map With react',
+          img: './dist/img/gallery/west.jpg',
+          info: 'This is a project create with React',
+          link: 'https://github.com/alvaro347/google-maps-react'
+        },
+        {
+          title: 'Project Gallery',
+          img: './dist/img/gallery/chinesehouse.jpg',
+          info: 'Full-Stack Project: Gallery with upload and edit features',
+          link: 'https://github.com/alvaro347/project-catalog'
+        },
+        {
+          title: 'My Portfolio website',
+          img: './dist/img/gallery/mascaras.jpg',
+          info: 'My current website have been build with React, Flask and a database.',
+          link: 'https://github.com/alvaro347/afr-website'
+        },
+        {
+          title: 'Google Map With react',
+          img: './dist/img/gallery/droid.jpg',
+          info: 'This is a project create with React',
+          link: 'https://github.com/alvaro347/google-maps-react'
+        },
+        {
+          title: 'Project Gallery',
+          img: './dist/img/gallery/bosque.jpg',
+          info: 'Full-Stack Project: Gallery with upload and edit features',
+          link: 'https://github.com/alvaro347/project-catalog'
+        }
+      ]
     };
   }
 
@@ -61,19 +93,21 @@ class Galleries extends Component {
 
     </div> */}
 
-<div className="cover-cont">  <img src="./dist/img/capsula.jpg" className="cover"/></div>
+    <div className="cover-cont">
+      <img src="./dist/img/capsula.jpg" className="cover"/>
+  </div>
 
 
 
     <div className="dev-intro">
-      <h2>Designer information</h2>
+      <h2>Designer</h2>
 
-      <p>SLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem </p>
+      <p>I'm currently studying at the FZD School of Design in Singapore. Some of my work can be found here.</p>
 
 
     </div>
 
-    <div>
+    {/* <div>
 
       <ul className="dev-cards">
 
@@ -130,37 +164,46 @@ class Galleries extends Component {
           onChange={this.handleChange}
         /> 3D
       </label>
-    </div>
+    </div> */}
 
 
     {/* <div className="btn-group btn-group-toggle selection" data-toggle="buttons">
 
-      { this.state.galleries.map((gallery) => (
-        <Radio
-          active = {this.state.active}
-          notactive = {this.state.notactive}
-          array={ gallery }
-          key= { gallery }
-          item = {this.state.gallery }
-        />
-      ))}
+    { this.state.galleries.map((gallery) => (
+    <Radio
+    active = {this.state.active}
+    notactive = {this.state.notactive}
+    array={ gallery }
+    key= { gallery }
+    item = {this.state.gallery }
+  />
+))}
 
-    </div> */}
-
-
-    <div className="gallery">
-      <Image />
-      <Image />
-      <Image />
-      <Image />
-    </div>
+</div> */}
 
 
 
 
+<div className="gallery">
+  { this.state.images.map((image) => (
+    <Image
+      // title = { image.title }
+      img = {image.img}
+      // info = { image.info }
+      // key = { image.title }
+      // link = { image.link }
+    />
+  ))}
 
 
-  </section>
+</div>
+
+
+
+
+
+
+</section>
 );
 }
 }

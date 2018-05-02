@@ -12,15 +12,16 @@ class Home extends Component {
 
         <div className="container intro">
           <h2 className="quote-title">Some of my work</h2>
-          <p className="quote-text">Here you can checkout some of my work that goes from designer (industrial design, posters, concept design, etc), Full-Stack Website developer and video and photography works.</p>
+          <p className="quote-text">Here you can checkout some of my work that goes from design (industrial design, posters, concept design, etc), Full-Stack Website developer video and photography works.</p>
         </div>
 
 
         <div className="container work">
           <div className="text-wrapper">
             <h3 className="works-title">Designer</h3>
-            <p>Creative designer with numeours pieces. Different media like digital, 3D, traditional, watercolor, acrylics, etc.</p>
-            <p>I have bee studying design in the school of Brendan Baeza for one year. Concept design, including vehicles, characters. Animated videos for a techonology company. Drawing and designing have been my favorite hobby.</p>
+            <hr/>
+            <p>Creative designer with numerous pieces. Different media like digital, 3D, traditional, watercolor, acrylics, etc.</p>
+            <p>I have bee studying design in the school of Brendan Baeza for one year. Concept design, including vehicles, characters, etc. Animated videos for a techonology company. Drawing and designing have been my favorite hobby.</p>
             <ul>
               <li>Concept Design</li>
               <li>Illustrations</li>
@@ -36,13 +37,11 @@ class Home extends Component {
 
 
         <div className="container work">
-          <div className="image-wrapper-x">
-            <img src="./dist/img/code.png" alt="work1" className="work-image"/>
-          </div>
-          <div className="text-wrapper-2">
+
+          <div className="text-wrapper">
 
             <h3 className="works-title">Developer</h3>
-
+            <hr/>
             <p>Fron-End and Back-End developer including databases, applications, APIs, etc. Knowledge in HTML, CSS, Javascript ( React, jQuery), Python, PostgreSQL, Ubuntu, Git, databases, Numpy, etc.</p>
             <p>This website was made with Python and Flask for the Back-end and Fron-End with HTML, CSS and React.</p>
             <ul>
@@ -52,11 +51,13 @@ class Home extends Component {
             </ul>
 
 
-            <Link to="/developer"><button type="button" className="btn btn-outline-primary">Projects</button></Link>
+            <Link to="/developer"><button type="button" className="btn btn-outline-primary button-3">Projects</button></Link>
 
-            <div className="image-wrapper-2">
-              <img src="./dist/img/code.png" alt="work1" className="work-image"/>
-            </div>
+
+
+          </div>
+          <div className="image-wrapper">
+            <img src="./dist/img/code.png" alt="work1" className="work-image"/>
           </div>
         </div>
 
@@ -65,8 +66,9 @@ class Home extends Component {
 
           <div className="text-wrapper">
             <h3 className="works-title">Photography</h3>
-            <p>but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <p>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unkno.</p>
+            <hr/>
+            <p>One of my favourites hobbies it's to take photos. I usually like urban photography and landscape photography the most. Some of my albums are moments or events like the Night Market that can be found in Singapore</p>
+            <p>I also like to make time-lapses from different landscapes. Some of my time-lapses includes my designs as a video.</p>
             <button type="button" className="btn btn-outline-primary">Portfolio</button>
           </div>
           <div className="image-wrapper">

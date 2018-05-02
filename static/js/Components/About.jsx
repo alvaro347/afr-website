@@ -10,27 +10,37 @@ class About extends Component {
     return (
       <section id="about">
 
-<div>
+        <div>
 
-</div>
+        </div>
 
-<div className="gap"></div>
+        <div className="gap"></div>
 
-    <div className="about-card">
-      <div className="about-img-container">
+        {/* <div className="about-card">
+        <div className="about-img-container">
         <img src="./dist/img/portrait.jpg" className="about-img"/>
       </div>
       <div className="about-text">
-        <h1>Alvaro fernandez</h1>
-        <h2>Designer, Full-Stack Developer</h2>
-        <p>ng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-      </div>
+      <h1>Alvaro Fernandez</h1>
+      <h2>Designer, Full-Stack Developer</h2>
+      <p>I'm a electrical engineer studying at the FZD School of Design. I'm also a Full-Stack Web Developer.</p>
     </div>
+  </div> */}
 
+  <div className="about-img-container2">
+    <img src="./dist/img/portrait.jpg" className="about-img2"/>
+  </div>
 
-      </section>
-    );
-  }
+  <div className="about-text2">
+    <h1>Alvaro Fernandez</h1>
+    <hr/>
+    <h2>Designer, Full-Stack Developer</h2>
+    <p>I'm a electrical engineer studying at the FZD School of Design. I'm also a Full-Stack Web Developer.</p>
+  </div>
+
+</section>
+);
+}
 }
 
 export default About;

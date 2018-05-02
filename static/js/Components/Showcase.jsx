@@ -53,7 +53,7 @@ class Showcase extends Component {
       return (
 
         <section id="showcase" role="banner">
-          <img src="./dist/img/capsula.jpg" alt="" className="cover-img"/>
+          <img src="./dist/img/gallery/machine.jpg" alt="" className="cover-img"/>
           {/* <div className="w3-content w3-display-container" style="max-width:800px">
             <img className="mySlides" src="./dist/css/img/capsula.png"  />
             <img className="mySlides" src="./dist/css/img/capsula.png"  />
