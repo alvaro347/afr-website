@@ -9,7 +9,6 @@ class Header extends Component {
 
     return (
       <footer id="footer">
-
         <div className="footer-content">
 
           <div>
@@ -25,16 +24,17 @@ class Header extends Component {
           </div>
 
           <div className="footer-social">
+
             <ul className="social-list">
               <li className="social-icon"><Link to="https://www.instagram.com/alvarogna/"><i className="fab fa-instagram footer-icon"></i></Link></li>
               <li className="social-icon"><Link to="https://alvaro347.deviantart.com"><i className="fab fa-deviantart footer-icon"></i></Link></li>
               <li className="social-icon"><Link to="https://www.linkedin.com/in/alvaro-fernandez-rodriguez/"><i className="fab fa-linkedin footer-icon"></i></Link></li>
               <li className="social-icon"><Link to="https://github.com/alvaro347"><i className="fab fa-github-square footer-icon"></i></Link></li>
             </ul>
+
           </div>
 
         </div>
-
       </footer>
     );
   }

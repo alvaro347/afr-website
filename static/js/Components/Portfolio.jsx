@@ -91,37 +91,28 @@ class Portfolio extends Component {
           items: result.galleries
         });
       })
-
     }
 
     render() {
+
       const { portfolio } = this.state;
 
       return (
 
         <section id="portfolio">
 
-
           <div className="cover-cont">
             <img src="./dist/img/capsula.jpg" className="cover"/>
           </div>
 
-
           <div className="dev-container">
             <div className="dev-intro">
               <h2>Portolio information</h2>
-
               <p>Information about my career. What projects I have been involded, education and job experience. This section will display a timeline with all the information</p>
-
-
             </div>
-
-
           </div>
 
-
           <div className="portfolio-feed">
-
             { portfolio.map((entry) => (
               <PortfolioEntry
                 title = { entry.title }
@@ -133,42 +124,12 @@ class Portfolio extends Component {
                 key = { entry.title }
               />
             ))}
-
           </div>
 
-          {/* <div className="btn-group btn-group-toggle selection" data-toggle="buttons">
-          <label className="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off" /> All
-        </label>
-        <label className="btn btn-secondary active">
+        </section>
 
-        <input type="radio" name="options" id="option1" autocomplete="off" checked /> Portfplio
-      </label>
-      <label className="btn btn-secondary">
-      <input type="radio" name="options" id="option2" autocomplete="off" /> Traditional
-    </label>
-    <label className="btn btn-secondary">
-    <input type="radio" name="options" id="option3" autocomplete="off" /> 3D
-  </label>
-</div>
+      );
+    }
+  }
 
-<div className="image-gallery">
-<Card />
-<Card />
-<Card />
-<Card />
-</div> */}
-
-
-
-
-
-
-</section>
-);
-}
-}
-
-
-
-export default Portfolio;
+  export default Portfolio;
