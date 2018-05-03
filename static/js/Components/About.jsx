@@ -10,12 +10,6 @@ class About extends Component {
     return (
       <section id="about">
 
-        <div>
-
-        </div>
-
-        <div className="gap"></div>
-
         {/* <div className="about-card">
         <div className="about-img-container">
         <img src="./dist/img/portrait.jpg" className="about-img"/>
@@ -39,6 +33,7 @@ class About extends Component {
   </div>
 
 </section>
+
 );
 }
 }

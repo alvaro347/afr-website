@@ -5,29 +5,20 @@ import { BrowserRouter, Route, Link } from 'react-router-dom'
 
 class Image extends Component {
 
-
-
-
   render() {
 
     return (
 
-
       <figure className="gallery-imgs">
+
         <a href={ this.props.img }>
           <img src={ this.props.img } className="gallery-img" alt="Trolltunga Norway" />
         </a>
-        {/* <div class="middle">
-          <div class="text">Capsula en el desierto</div>
-        </div> */}
+
       </figure>
-
-
 
     );
   }
 }
-
-
 
 export default Image;

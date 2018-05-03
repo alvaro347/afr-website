@@ -53,8 +53,6 @@ class Home extends Component {
 
             <Link to="/developer"><button type="button" className="btn btn-outline-primary button-3">Projects</button></Link>
 
-
-
           </div>
           <div className="image-wrapper">
             <img src="./dist/img/code.png" alt="work1" className="work-image"/>

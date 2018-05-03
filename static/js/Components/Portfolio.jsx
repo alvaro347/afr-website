@@ -14,7 +14,7 @@ class Portfolio extends Component {
         {
           title: 'FZD School of Design',
           img: './dist/img/fzd.jpg',
-          location: 'Singapore',
+          location: 'FZD - Singapore',
           date: ' 2018 - 2019',
           text: 'Concept design and product design in Feng Zhu School of Design. Find solutions to any design problem and create designs for the entertaiment industry. Using 3D Tools and 2D to create all designs.',
           keywords: [
@@ -39,8 +39,8 @@ class Portfolio extends Component {
         },
         {
           title: 'Project Engineer',
-          img: './dist/img/project.jpg',
-          location: 'Singapore',
+          img: './dist/img/greenlots.png',
+          location: 'Greenlots - Singapore',
           date: ' 2017 - 2018',
           text: 'Project engineer for electric vehicles and charging solutions. Managing the process from receiving the inquiry to the installations and the necessary maintenances to those chargers. I also assist meetings and handle the chargers database to keep track of every single item and inquiry.',
           keywords: [

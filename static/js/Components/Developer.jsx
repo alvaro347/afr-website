@@ -25,6 +25,18 @@ class Developer extends Component {
           link: 'https://github.com/alvaro347/project-catalog'
         },
         {
+          title: 'Arcade Game (Bugs)',
+          img: './dist/img/arcade-game.png',
+          info: 'Object oriented programming game. The player have to collect and cross the river',
+          link: 'https://github.com/alvaro347/project-arcade-game'
+        },
+        {
+          title: 'Feed Reader Testing',
+          img: './dist/img/feed-reader.png',
+          info: 'Jasmine Testing project of a feed reader from Udacity.',
+          link: 'https://github.com/alvaro347/feed-reader-testing'
+        },
+        {
           title: 'My Portfolio website',
           img: './dist/img/website.png',
           info: 'My current website have been build with React, Flask and a database.',
