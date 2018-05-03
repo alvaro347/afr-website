@@ -12,6 +12,19 @@ class Portfolio extends Component {
     this.state = {
       portfolio: [
         {
+          title: 'FZD School of Design',
+          img: './dist/img/fzd.jpg',
+          location: 'Singapore',
+          date: ' 2018 - 2019',
+          text: 'Concept design and product design in Feng Zhu School of Design. Find solutions to any design problem and create designs for the entertaiment industry. Using 3D Tools and 2D to create all designs.',
+          keywords: [
+            {
+              tag: 'web',
+              link: 'alvarofrdesign.com'
+            }
+          ]
+        },
+        {
           title: 'Udacity',
           img: './dist/img/udacity.png',
           location: 'Udacity.com',
@@ -25,9 +38,35 @@ class Portfolio extends Component {
           ]
         },
         {
+          title: 'Project Engineer',
+          img: './dist/img/project.jpg',
+          location: 'Singapore',
+          date: ' 2017 - 2018',
+          text: 'Project engineer for electric vehicles and charging solutions. Managing the process from receiving the inquiry to the installations and the necessary maintenances to those chargers. I also assist meetings and handle the chargers database to keep track of every single item and inquiry.',
+          keywords: [
+            {
+              tag: 'web',
+              link: 'alvarofrdesign.com'
+            }
+          ]
+        },
+        {
           title: 'Electrical Engineer',
+          img: './dist/img/rodritol.jpg',
+          location: 'Rodritol - Spain',
+          date: ' 2015 - 2017',
+          text: 'Leading and managing teams for maintenance, fixing and tes- ting transformers and electric motors in a workshop and overseas from clients and power centrals of Canary Islands. Doing wiring, maintenance of transformation centers, replacing transformersʼ rubber seals and examining installations for machinery like trans- former protections, distribution panels, motors, UPS, etc.',
+          keywords: [
+            {
+              tag: 'web',
+              link: 'alvarofrdesign.com'
+            }
+          ]
+        },
+        {
+          title: 'Degree in Electrical Engineer',
           img: './dist/img/ulpgc.jpg',
-          location: 'Spain',
+          location: 'ULPGC, Spain',
           date: ' 2011 - 2015',
           text: 'Electrical Engineer - Working to grade, rated outstanding: “Study and design of ships con- necting to the power grid in the port of Las Palmas de Gran Canaria”. The technology is called “Cold Ironing” or AMP (alternative maritime power).',
           keywords: [

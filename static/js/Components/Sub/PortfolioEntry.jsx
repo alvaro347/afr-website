@@ -20,7 +20,7 @@ class PortfolioEntry extends Component {
           <div className="entry-text">
             <h3 className="entry-title">{ title }</h3>
             <hr/>
-            <h4 className="entry-title-2">{ location +date }</h4>
+            <h4 className="entry-title-2">{ location }, <i>{ date }</i></h4>
             <p className="entry-info">{ text }</p>
             <p className="entry-key">{ keywords }</p>
           </div>

@@ -14,9 +14,9 @@ class Image extends Component {
 
 
       <figure className="gallery-imgs">
-        <Link to="#">
+        <a href={ this.props.img }>
           <img src={ this.props.img } className="gallery-img" alt="Trolltunga Norway" />
-        </Link>
+        </a>
         {/* <div class="middle">
           <div class="text">Capsula en el desierto</div>
         </div> */}

@@ -14,26 +14,26 @@ class Showcase extends Component {
   }
 
 
-// this.showDivs(this.state.slideIndex)
-//
-//   plusDivs(n) {
-//   this.showDivs(this.state.slideIndex += n);
-// }
-// currentDiv(n) {
-//   showDivs(this.state.slideIndex = n);
-// }
-//
-//
-// showDivs(n) {
-//   var i;
-//   var x = document.getElementsByClassName("mySlides");
-//   if (n > x.length) {this.state.slideIndex = 1}
-//   if (n < 1) {this.state.slideIndex = x.length}
-//   for (i = 0; i < x.length; i++) {
-//      x[i].style.display = "none";
-//   }
-//   x[this.state.slideIndex-1].style.display = "block";
-// }
+  // this.showDivs(this.state.slideIndex)
+  //
+  //   plusDivs(n) {
+  //   this.showDivs(this.state.slideIndex += n);
+  // }
+  // currentDiv(n) {
+  //   showDivs(this.state.slideIndex = n);
+  // }
+  //
+  //
+  // showDivs(n) {
+  //   var i;
+  //   var x = document.getElementsByClassName("mySlides");
+  //   if (n > x.length) {this.state.slideIndex = 1}
+  //   if (n < 1) {this.state.slideIndex = x.length}
+  //   for (i = 0; i < x.length; i++) {
+  //      x[i].style.display = "none";
+  //   }
+  //   x[this.state.slideIndex-1].style.display = "block";
+  // }
 
   componentDidMount() {
 
@@ -53,24 +53,28 @@ class Showcase extends Component {
       return (
 
         <section id="showcase" role="banner">
-          <img src="./dist/img/gallery/machine.jpg" alt="" className="cover-img"/>
+
+          <img src="./dist/img/gallery/machine.jpg" alt="" className="showcase-img"/>
           {/* <div className="w3-content w3-display-container" style="max-width:800px">
-            <img className="mySlides" src="./dist/css/img/capsula.png"  />
-            <img className="mySlides" src="./dist/css/img/capsula.png"  />
-            <img className="mySlides" src="./dist/css/img/capsula.png" />
-            <div className="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-              <div className="w3-left w3-hover-text-khaki" onClick={this.plusDivs(-1)}>&#10094;</div>
-              <div className="w3-right w3-hover-text-khaki" onClick={this.plusDivs(1)}>&#10095;</div>
-              <span className="w3-badge demo w3-border w3-transparent w3-hover-white" onClick={this.currentDiv(1)}></span>
-              <span className="w3-badge demo w3-border w3-transparent w3-hover-white" onClick={this.currentDiv(2)}></span>
-              <span className="w3-badge demo w3-border w3-transparent w3-hover-white" onClick={this.currentDiv(3)}></span>
-            </div> */}
-          {/* </div> */}
-        </section>
+          <img className="mySlides" src="./dist/css/img/capsula.png"  />
+          <img className="mySlides" src="./dist/css/img/capsula.png"  />
+          <img className="mySlides" src="./dist/css/img/capsula.png" />
+          <div className="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+          <div className="w3-left w3-hover-text-khaki" onClick={this.plusDivs(-1)}>&#10094;</div>
+          <div className="w3-right w3-hover-text-khaki" onClick={this.plusDivs(1)}>&#10095;</div>
+          <span className="w3-badge demo w3-border w3-transparent w3-hover-white" onClick={this.currentDiv(1)}></span>
+          <span className="w3-badge demo w3-border w3-transparent w3-hover-white" onClick={this.currentDiv(2)}></span>
+          <span className="w3-badge demo w3-border w3-transparent w3-hover-white" onClick={this.currentDiv(3)}></span>
+        </div> */}
+        {/* </div> */}
+        {/* <div className="showcase-text">
+          <h1>Hello</h1>
+        </div> */}
+      </section>
 
-      );
-    }
+    );
   }
+}
 
 
-  export default Showcase;
+export default Showcase;

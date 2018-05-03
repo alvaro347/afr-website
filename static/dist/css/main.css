@@ -42,7 +42,8 @@ body {
 .nav-link-active {
   color: white;
   display: block;
-  padding: .5rem 1rem; }
+  padding: .5rem 1rem;
+  border-bottom: 2px solid white; }
 
 .menu {
   z-index: 3000;
@@ -196,6 +197,16 @@ ul li a:hover, ul li a:focus, ul li a:active {
   text-align: center;
   width: 100%;
   margin-top: -60px; }
+
+.showcase-img {
+  width: 100%;
+  position: relative;
+  z-index: -3; }
+
+.showcase-text {
+  right: 40%;
+  color: white;
+  z-index: 20000; }
 
 .work {
   display: -webkit-box;
@@ -363,10 +374,6 @@ ul li a:hover, ul li a:focus, ul li a:active {
   position: absolute;
   height: 400px;
   margin: 0; }
-
-.cover-img {
-  width: 100%;
-  position: relative; }
 
 .dev-skills-list {
   list-style: none;
@@ -560,7 +567,7 @@ ul li a:hover, ul li a:focus, ul li a:active {
   color: white;
   width: 50%;
   padding: 50px;
-  background: #525b62; }
+  background: #4596d4; }
 
 .about-img {
   width: 100%; }
@@ -717,7 +724,8 @@ ul li a:hover, ul li a:focus, ul li a:active {
     display: block;
     width: 90%; }
   .entry-text {
-    width: 100%; }
+    width: 100%;
+    padding: 10px 20px; }
   .timeline {
     display: inline-block;
     left: 50%; }
@@ -746,6 +754,8 @@ ul li a:hover, ul li a:focus, ul li a:active {
     transition: 0s; }
   .menu {
     display: none; }
+  .nav-link-active {
+    border-bottom: none; }
   .nav-bar {
     padding: 20px 0; }
   .bar1 {
