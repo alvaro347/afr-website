@@ -85,7 +85,6 @@ class Portfolio extends Component {
     .then(res => res.json())
     .then(
       (result) => {
-        console.log('Resultado', result);
         this.setState({
           isLoaded: true,
           items: result.galleries

@@ -20,31 +20,31 @@ class Galleries extends Component {
       galleries: ['All', 'Digital', 'Traditional', '3D'],
       images: [
         {
-          title: 'Google Map With react',
+          title: 'West',
           img: './dist/img/gallery/west.jpg',
           info: 'This is a project create with React',
           link: 'https://github.com/alvaro347/google-maps-react'
         },
         {
-          title: 'Project Gallery',
+          title: 'Chinese House',
           img: './dist/img/gallery/chinesehouse.jpg',
           info: 'Full-Stack Project: Gallery with upload and edit features',
           link: 'https://github.com/alvaro347/project-catalog'
         },
         {
-          title: 'My Portfolio website',
+          title: 'Mascaras',
           img: './dist/img/gallery/mascaras.jpg',
           info: 'My current website have been build with React, Flask and a database.',
           link: 'https://github.com/alvaro347/afr-website'
         },
         {
-          title: 'Google Map With react',
+          title: 'Droid',
           img: './dist/img/gallery/droid.jpg',
           info: 'This is a project create with React',
           link: 'https://github.com/alvaro347/google-maps-react'
         },
         {
-          title: 'Project Gallery',
+          title: 'Bosque',
           img: './dist/img/gallery/bosque.jpg',
           info: 'Full-Stack Project: Gallery with upload and edit features',
           link: 'https://github.com/alvaro347/project-catalog'
@@ -189,6 +189,7 @@ class Galleries extends Component {
     <Image
       // title = { image.title }
       img = {image.img}
+      key = { image.title }
       // info = { image.info }
       // key = { image.title }
       // link = { image.link }
