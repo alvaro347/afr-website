@@ -458,6 +458,54 @@ ul li a:hover, ul li a:focus, ul li a:active {
   overflow: hidden;
 }
 
+.website {
+  // padding: 30px ;
+  background: rgba(221, 221, 221, 0.5);
+// display: flex;
+// flex-wrap: wrap;
+// background-image: url();
+justify-content: center;
+text-align: center;
+padding: 50px;
+}
+
+.website-text {
+  padding: 0 50px;
+  // max-width: 1000px;
+  // width:60%;
+  margin-bottom: 50px;
+  color: rgb(34, 34, 34);
+}
+
+.website-list-cont {
+  // max-width: 500px;
+  // text-align: left;
+  list-style: none;
+
+  // width: 80%;
+}
+.website-list {
+  // padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  // text-align: center;
+    justify-content: center;
+  list-style: none;
+color: grey;
+}
+.website-item {
+  // display: flex;
+  // flex-wrap: wrap;
+  width: 130px;
+  margin: 20px;
+}
+.web-icon {
+  // float: left;
+  font-size: 60px;
+  color: #2ca0cf;
+  margin-bottom: 20px;
+}
+
 
 .dev-intro {
   clear: both;

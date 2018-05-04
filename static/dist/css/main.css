@@ -348,6 +348,43 @@ ul li a:hover, ul li a:focus, ul li a:active {
 #developer {
   overflow: hidden; }
 
+.website {
+  background: rgba(221, 221, 221, 0.5);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 50px; }
+
+.website-text {
+  padding: 0 50px;
+  margin-bottom: 50px;
+  color: #222222; }
+
+.website-list-cont {
+  list-style: none; }
+
+.website-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  color: grey; }
+
+.website-item {
+  width: 130px;
+  margin: 20px; }
+
+.web-icon {
+  font-size: 60px;
+  color: #2ca0cf;
+  margin-bottom: 20px; }
+
 .dev-intro {
   clear: both;
   -webkit-box-align: center;

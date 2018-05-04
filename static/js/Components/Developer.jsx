@@ -74,9 +74,8 @@ class Developer extends Component {
               <h2>Full-Stack Web Developer</h2>
 
               <p>I have created numerous projects using the lastest tools and frameworks shuch us: React, Flask, WebPack, jQuery, JSON and databases (PostgreSQL). This website was build entirely from start to finish with React, Flask, Bootstrap, Webpack and Gulp</p>
-
-
             </div>
+
 
             <div className="skills-container">
 
@@ -87,35 +86,64 @@ class Developer extends Component {
                 <li><img src="./dist/img/design.png" className="dev-icon" /><p><b>Design</b> and Animations with Photoshop and Illustrator.</p></li>
               </ul>
             </div>
+
+
+
+
+            <div className="website">
+              <div className="website-text">
+              <h2>This website was build from zero</h2>
+              <hr className="container"/>
+              <p>I build this website using the lastest technologies in web development. The Fron-End it's build with React, jQuery, HTML5, SASS and CSS3. For the Back-End I used Python (with Flask framework) to manage the server side. Also, it have a database (PostgreSQL) for having all the galleries, works and portfolio information of this website.</p>
+            </div>
+            <div className="website-list-cont">
+              <ul className="website-list">
+
+                <li className="website-item"><i className="fab fa-html5 web-icon"></i><p><b>HTML 5</b></p></li>
+                  <li className="website-item"><i className="fab fa-react web-icon"></i><p><b>React</b></p></li>
+                <li className="website-item"><i className="fab fa-css3-alt web-icon"></i><p><b>CSS 3</b></p></li>
+
+                <li className="website-item"><i className="fas fa-database web-icon"></i><p><b>PostgreSQL</b></p></li>
+                <li className="website-item"><i className="fab fa-python web-icon"></i><p><b>Flask</b></p></li>
+              </ul>
+
+            </div>
+
+
           </div>
 
-          <hr className="container"/>
 
-          {/* <div className="btn-group btn-group-toggle selection" data-toggle="buttons">
-          <label className="btn btn-secondary active">
-          <input type="radio" name="options" id="option1"  /> Apps
-        </label>
-        <label className="btn btn-secondary">
-        <input type="radio" name="options" id="option2" /> Web
+
+
+        </div>
+
+        {/* <hr className="container"/> */}
+
+        {/* <div className="btn-group btn-group-toggle selection" data-toggle="buttons">
+        <label className="btn btn-secondary active">
+        <input type="radio" name="options" id="option1"  /> Apps
       </label>
       <label className="btn btn-secondary">
-      <input type="radio" name="options" id="option3"  /> Games
+      <input type="radio" name="options" id="option2" /> Web
     </label>
-  </div> */}
+    <label className="btn btn-secondary">
+    <input type="radio" name="options" id="option3"  /> Games
+  </label>
+</div> */}
 
-  <div className="dev-cards">
+<div className="dev-cards">
 
-    { this.state.projects.map((project) => (
-      <Card
-        title = { project.title }
-        img = {project.img}
-        info = { project.info }
-        key = { project.title }
-        link = { project.link }
-      />
-    ))}
+  { this.state.projects.map((project) => (
+    <Card
+      title = { project.title }
+      img = {project.img}
+      info = { project.info }
+      key = { project.title }
+      link = { project.link }
+    />
+  ))}
 
-  </div>
+</div>
 
 
 
