@@ -461,12 +461,12 @@ ul li a:hover, ul li a:focus, ul li a:active {
 .website {
   // padding: 30px ;
   background: rgba(221, 221, 221, 0.5);
-// display: flex;
-// flex-wrap: wrap;
-// background-image: url();
-justify-content: center;
-text-align: center;
-padding: 50px;
+  // display: flex;
+  // flex-wrap: wrap;
+  // background-image: url();
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
 }
 
 .website-text {
@@ -489,9 +489,9 @@ padding: 50px;
   display: flex;
   flex-wrap: wrap;
   // text-align: center;
-    justify-content: center;
+  justify-content: center;
   list-style: none;
-color: grey;
+  color: grey;
 }
 .website-item {
   // display: flex;
@@ -554,7 +554,7 @@ color: grey;
 }
 
 .dev-skills-list li {
-  width: 150px;
+  width: 200px;
   margin: 30px;
   text-align: center;
   padding: 0;

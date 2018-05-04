@@ -14,6 +14,7 @@ import Portfolio from './Components/Portfolio'
 
 require('../css/style.css');
 require('../css/querys.css');
+require('../css/donut.css');
 
 // require('./main.js');
 import Contact from './Components/Contact'
