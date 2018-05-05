@@ -2,6 +2,12 @@ const webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
+const HtmlWebpackPluginConfig = new HtmlWebPackPlugin({
+  template: './index.html',
+  filename: 'index.html',
+  inject: 'body'
+})
+
 
 const config = {
   entry:  __dirname + '/js/index.jsx',
@@ -42,7 +48,7 @@ const config = {
   },
   plugins: [
     new ExtractTextPlugin('css/[name].css'),
-
+HtmlWebpackPluginConfig
   ]
 };
 
