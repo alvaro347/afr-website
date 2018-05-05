@@ -7,6 +7,8 @@ import PortfolioEntry from './Sub/PortfolioEntry'
 
 
 class Portfolio extends Component {
+
+
   constructor() {
     super();
     this.state = {
@@ -81,6 +83,9 @@ class Portfolio extends Component {
   }
 
   componentDidMount() {
+
+      window.scrollTo(0, 0)
+
     fetch("http://localhost:3000/hello/json")
     .then(res => res.json())
     .then(

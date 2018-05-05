@@ -1,15 +1,24 @@
 import React, { Component } from "react";
 import { Router, browserHistory } from 'react-router';
 import { BrowserRouter, Route, Link } from 'react-router-dom'
-
+import ScrollAnimation from 'react-animate-on-scroll';
 
 class PortfolioEntry extends Component {
+
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
 
   render() {
 
     const { img, title, location, text, keywords, date } = this.props
 
     return (
+
+      <ScrollAnimation animateIn="fadeIn"
+        animateOnce={true}
+        duration={0.4}
+        >
 
       <article className="entry">
         <div className="entry-cont">
@@ -32,6 +41,8 @@ class PortfolioEntry extends Component {
 
         </div>
       </article>
+
+    </ScrollAnimation>
 
     );
   }

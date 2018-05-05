@@ -7,6 +7,9 @@ import Radio from './Sub/Radio'
 
 
 class Galleries extends Component {
+
+
+
   constructor() {
     super();
     this.handleChange = this.handleChange.bind(this);
@@ -65,6 +68,9 @@ class Galleries extends Component {
 
 
   componentDidMount() {
+
+      window.scrollTo(0, 0)
+
     fetch("http://localhost:3000/hello/json")
     .then(res => res.json())
     .then(
