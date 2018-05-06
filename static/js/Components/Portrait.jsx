@@ -1,19 +1,27 @@
 import React, { Component } from "react";
-import { Router, browserHistory } from 'react-router';
-import { BrowserRouter, Route, Link } from 'react-router-dom'
-
+import ScrollAnimation from 'react-animate-on-scroll';
 
 class Portrait extends Component {
   render() {
 
     return (
+
       <section id="portrait">
 
-        <img className="portrait-img" src="./dist/img/portrait.jpg" alt=""/>
+        <ScrollAnimation animateIn="fadeIn"
+          animateOnce={true}
+          duration={0.4}
+          >
 
-      </section>
-    );
+            <img className="portrait-img" src="./dist/img/portrait.jpg" alt=""/>
+
+
+          </ScrollAnimation>
+        </section>
+
+
+      );
+    }
   }
-}
 
-export default Portrait;
+  export default Portrait;

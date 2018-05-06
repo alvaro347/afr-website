@@ -9,21 +9,25 @@ class Image extends Component {
 
     return (
 
-      <ScrollAnimation animateIn="fadeIn"
-        animateOnce={true}
-        duration={0.4}
-        >
+
 
       <figure className="gallery-imgs">
 
-        <a href={ this.props.img }>
-          <img src={ this.props.img } className="gallery-img" alt="Trolltunga Norway" />
-        </a>
+        <ScrollAnimation animateIn="fadeIn"
+          animateOnce={true}
+          duration={0.4}
+          >
 
-      </figure>
-  </ScrollAnimation>
-    );
+            <a href={ this.props.img }>
+              <img src={ this.props.img } className="gallery-img" alt="Trolltunga Norway" />
+            </a>
+
+          </ScrollAnimation>
+
+        </figure>
+
+      );
+    }
   }
-}
 
-export default Image;
+  export default Image;

@@ -31,17 +31,15 @@ DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
 
-# @app.route('/', defaults={'path': ''})
-# @app.route('/<path:path>')
-# def catch_all(path):
-#     return render_template('index.html')
-
-
-@app.route('/')
-def home():
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def catch_all(path):
     return render_template('index.html')
 
 
+# @app.route('/')
+# def home():
+#     return render_template('index.html')
 
 
 # @app.route('/hello')

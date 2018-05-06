@@ -30,10 +30,8 @@ import Contact from './Components/Contact'
 class App extends Component {
   render() {
     return (
-<div className="app">
+      <div className="app">
 
-  {/* <Router history={createBrowserHistory()}> */}
-      <div className="home-path">
         <Route exact path='/' render={() => (
           <div className="home">
             <Header />
@@ -79,10 +77,8 @@ class App extends Component {
             <Footer />
           </div>
         )}/>
-
+        
       </div>
-    {/* </Router> */}
-</div>
 
     );
   }
