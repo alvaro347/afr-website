@@ -30,57 +30,60 @@ import Contact from './Components/Contact'
 class App extends Component {
   render() {
     return (
+<div className="app">
 
-    <Router history={createBrowserHistory()}>
-        <div className="home-path">
-          <Route exact path='/' render={() => (
-            <div className="home">
-              <Header />
-              <Showcase />
-              <Portrait />
-              <Home />
-              {/* <Contact /> */}
-              <Footer />
-            </div>
+  {/* <Router history={createBrowserHistory()}> */}
+      <div className="home-path">
+        <Route exact path='/' render={() => (
+          <div className="home">
+            <Header />
+            <Showcase />
+            <Portrait />
+            <Home />
+            {/* <Contact /> */}
+            <Footer />
+          </div>
 
-          )}/>
+        )}/>
 
-          <Route exact path='/galleries' render={() => (
-            <div className="galleries-container">
-              <Header />
-              <Galleries />
-              <Footer />
-            </div>
-          )}/>
+        <Route exact path='/galleries' render={() => (
+          <div className="galleries-container">
+            <Header />
+            <Galleries />
+            <Footer />
+          </div>
+        )}/>
 
-          <Route exact path='/developer' render={() => (
-            <div className='developer-container'>
-              <Header />
-              <Developer />
-              <Footer />
-            </div>
-          )}/>
+        <Route exact path='/developer' render={() => (
+          <div className='developer-container'>
+            <Header />
+            <Developer />
+            <Footer />
+          </div>
+        )}/>
 
-          <Route exact path='/about' render={() => (
-            <div className='about-container'>
-              <Header />
-              <About />
-              {/* <Contact /> */}
-              <Footer />
-            </div>
-          )}/>
+        <Route exact path='/about' render={() => (
+          <div className='about-container'>
+            <Header />
+            <About />
+            {/* <Contact /> */}
+            <Footer />
+          </div>
+        )}/>
 
-          <Route exact path='/portfolio' render={() => (
-            <div className='portfolio-container'>
-              <Header />
-              <Portfolio />
-              {/* <Contact /> */}
-              <Footer />
-            </div>
-          )}/>
+        <Route exact path='/portfolio' render={() => (
+          <div className='portfolio-container'>
+            <Header />
+            <Portfolio />
+            {/* <Contact /> */}
+            <Footer />
+          </div>
+        )}/>
 
-        </div>
-      </Router>
+      </div>
+    {/* </Router> */}
+</div>
+
     );
   }
 }

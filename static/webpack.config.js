@@ -13,7 +13,8 @@ const config = {
   entry:  __dirname + '/js/index.jsx',
   output: {
     path: __dirname + '/dist',
-    filename: 'js/bundle.js',
+    publicPath: '/',
+    filename: './js/bundle.js'
   },
   resolve: {
     extensions: [".js", ".jsx", ".css"]
@@ -46,9 +47,12 @@ const config = {
       }
     ]
   },
+  devServer: {
+    historyApiFallback: true,
+  },
   plugins: [
     new ExtractTextPlugin('css/[name].css'),
-HtmlWebpackPluginConfig
+    HtmlWebpackPluginConfig
   ]
 };
 
