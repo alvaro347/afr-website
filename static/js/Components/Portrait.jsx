@@ -10,18 +10,17 @@ class Portrait extends Component {
 
         <ScrollAnimation animateIn="fadeIn"
           animateOnce={true}
-          duration={0.4}
-          >
+          duration={0.4}>
 
-            <img className="portrait-img" src="./dist/img/portrait.jpg" alt=""/>
+          <img className="portrait-img" src="./dist/img/portrait.jpg" alt=""/>
 
-
-          </ScrollAnimation>
-        </section>
+        </ScrollAnimation>
 
 
-      );
-    }
+
+      </section>
+    );
   }
+}
 
-  export default Portrait;
+export default Portrait;

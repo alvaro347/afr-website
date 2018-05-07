@@ -3,7 +3,7 @@ import { Router, browserHistory } from 'react-router';
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 import ScrollAnimation from 'react-animate-on-scroll';
 
-class Image extends Component {
+class Thumbnail extends Component {
 
   render() {
 
@@ -27,4 +27,4 @@ class Image extends Component {
   }
 }
 
-export default Image;
+export default Thumbnail;

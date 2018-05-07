@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-import { Router, browserHistory } from 'react-router';
-import { BrowserRouter, Route, Link } from 'react-router-dom'
 import Showcase from './Showcase'
 import ScrollAnimation from 'react-animate-on-scroll';
-
+import Thumbnail from './Sub/Thumbnail'
 
 class Home extends Component {
 
@@ -19,8 +17,7 @@ class Home extends Component {
 
         <ScrollAnimation animateIn="fadeIn"
           animateOnce={true}
-          duration={0.4}
-          >
+          duration={0.4}>
 
           <div className="container intro">
             <h2 className="quote-title">Some of my work</h2>
@@ -31,8 +28,7 @@ class Home extends Component {
 
         <ScrollAnimation animateIn="fadeIn"
           animateOnce={true}
-          duration={0.4}
-          >
+          duration={0.4}>
 
           <div className="container work">
             <div className="text-wrapper">
@@ -45,7 +41,7 @@ class Home extends Component {
                 <li>Illustrations</li>
                 <li>Animations</li>
               </ul>
-              <Link to="/galleries"><button type="button" className="btn btn-outline-primary">Gallery</button></Link>
+              <Link to="/gallery"><button type="button" className="btn btn-outline-primary">Gallery</button></Link>
             </div>
             <div className="image-wrapper">
               <img src="./dist/img/isometric.png" alt="work1" className="work-image"/>
@@ -57,8 +53,7 @@ class Home extends Component {
 
         <ScrollAnimation animateIn="fadeIn"
           animateOnce={true}
-          duration={0.4}
-          >
+          duration={0.4}>
 
           <div className="container work">
 
@@ -86,8 +81,7 @@ class Home extends Component {
 
         <ScrollAnimation animateIn="fadeIn"
           animateOnce={true}
-          duration={0.4}
-          >
+          duration={0.4}>
 
           <div  className="container work">
 

@@ -57,7 +57,7 @@ class Header extends Component {
             <ul className="nav-list">
 
               <li className="nav-item"><Link to="/" className={ window.location.pathname == '/' ? this.state.active : this.state.normal }><i className="fas fa-home menu-icon"></i>Home</Link></li>
-              <li className="nav-item"><Link to="/galleries" className={ window.location.pathname == '/galleries' ? this.state.active : this.state.normal }><i className="far fa-image menu-icon"></i>Gallery</Link></li>
+              <li className="nav-item"><Link to="/gallery" className={ window.location.pathname == '/gallery' ? this.state.active : this.state.normal }><i className="far fa-image menu-icon"></i>Gallery</Link></li>
               <li className="nav-item"><Link to="/developer" className={ window.location.pathname == '/developer' ? this.state.active : this.state.normal }><i className="fas fa-code menu-icon"></i>Developer</Link></li>
               <li className="nav-item"><Link to="/portfolio" className={ window.location.pathname == '/portfolio' ? this.state.active : this.state.normal }><i className="far fa-file-alt menu-icon"></i>Portfolio</Link></li>
               <li className="nav-item"><Link to="/about" className={ window.location.pathname == '/about' ? this.state.active : this.state.normal }><i className="far fa-user menu-icon"></i>About</Link></li>
@@ -78,7 +78,7 @@ class Header extends Component {
         <ul className="nav-menu">
 
         <li className=""><Link to="/"><i className="fas fa-home menu-icon"></i>Home</Link></li>
-        <li className=""><Link to="/galleries"><i className="far fa-image menu-icon"></i>Gallery</Link></li>
+        <li className=""><Link to="/gallery"><i className="far fa-image menu-icon"></i>Gallery</Link></li>
         <li className=""><Link to="/developer"><i className="fas fa-code menu-icon"></i>Developer</Link></li>
         <li className=""><Link to="/portfolio"><i className="far fa-file-alt menu-icon"></i>Portfolio</Link></li>
         <li className=""><Link to="/about"><i className="far fa-user menu-icon"></i>About</Link></li>

@@ -4,19 +4,19 @@ import { BrowserRouter, Route, Link } from 'react-router-dom'
 import {createBrowserHistory} from 'history';
 
 import Galleries from "./Components/Galleries";
-import Home from './Components/Home'
-import Header from './Components/Header'
-import Footer from './Components/Footer'
-import Portrait from './Components/Portrait'
-import Showcase from './Components/Showcase'
-import Developer from './Components/Developer'
-import About from './Components/About'
-import Portfolio from './Components/Portfolio'
+import Home from './Components/Home';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import Portrait from './Components/Portrait';
+import Showcase from './Components/Showcase';
+import Developer from './Components/Developer';
+import About from './Components/About';
+import Portfolio from './Components/Portfolio';
 
 require('../css/style.css');
 require('../css/querys.css');
 require('../css/donut.css');
-require('../css/animate.css')
+require('../css/animate.css');
 
 
 
@@ -44,7 +44,7 @@ class App extends Component {
 
         )}/>
 
-        <Route exact path='/galleries' render={() => (
+        <Route exact path='/gallery' render={() => (
           <div className="galleries-container">
             <Header />
             <Galleries />
@@ -77,7 +77,7 @@ class App extends Component {
             <Footer />
           </div>
         )}/>
-        
+
       </div>
 
     );
