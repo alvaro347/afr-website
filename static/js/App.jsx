@@ -12,6 +12,7 @@ import Showcase from './Components/Showcase';
 import Developer from './Components/Developer';
 import About from './Components/About';
 import Portfolio from './Components/Portfolio';
+import Thumbnails from './Components/Thumbnails';
 
 require('../css/style.css');
 require('../css/querys.css');
@@ -36,6 +37,7 @@ class App extends Component {
           <div className="home">
             <Header />
             <Showcase />
+            <Thumbnails />
             <Portrait />
             <Home />
             {/* <Contact /> */}

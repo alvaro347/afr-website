@@ -867,3 +867,27 @@ ul li a:hover, ul li a:focus, ul li a:active {
   display: inline-block
 
 }
+
+// thumbnails
+
+#thumbnails {
+  max-width: 1000px;
+// display: flex;
+  margin: 50px auto;
+}
+
+.thumbnail {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin: 5px;
+}
+
+.thumbnail-img {
+  width: 100%;
+}
+
+.thumbnails-container {
+  display: flex;
+  flex-wrap: wrap;
+}

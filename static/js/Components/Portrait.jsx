@@ -17,7 +17,6 @@ class Portrait extends Component {
         </ScrollAnimation>
 
 
-
       </section>
     );
   }

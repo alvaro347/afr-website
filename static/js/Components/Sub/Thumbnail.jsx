@@ -9,14 +9,14 @@ class Thumbnail extends Component {
 
     return (
 
-      <figure className="gallery-imgs">
+      <figure className="thumbnail">
 
         <ScrollAnimation animateIn="fadeIn"
           animateOnce={true}
           duration={0.4}>
 
           <a href={ this.props.img }>
-            <img src={ this.props.img } className="gallery-img" alt="Trolltunga Norway" />
+            <img src={ this.props.img } className="thumbnail-img" alt="Trolltunga Norway" />
           </a>
 
         </ScrollAnimation>

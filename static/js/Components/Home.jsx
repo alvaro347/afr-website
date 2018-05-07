@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Showcase from './Showcase'
 import ScrollAnimation from 'react-animate-on-scroll';
+import { BrowserRouter, Route, Link } from 'react-router-dom'
 import Thumbnail from './Sub/Thumbnail'
 
 class Home extends Component {
@@ -14,6 +15,7 @@ class Home extends Component {
   render() {
     return (
       <section id="home-content">
+
 
         <ScrollAnimation animateIn="fadeIn"
           animateOnce={true}
