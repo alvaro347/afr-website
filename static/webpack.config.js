@@ -1,5 +1,5 @@
 const webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 const HtmlWebpackPluginConfig = new HtmlWebPackPlugin({
