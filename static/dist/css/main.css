@@ -8,9 +8,6 @@ body {
 .container {
   max-width: 1100px; }
 
-.img {
-  width: 100%; }
-
 .has-dropdown {
   position: relative; }
 
@@ -143,11 +140,6 @@ ul li a:hover, ul li a:focus, ul li a:active {
   max-width: 400px;
   width: 30%;
   height: 400px; }
-
-#developer-img {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1; }
 
 #portrait {
   height: 250px;

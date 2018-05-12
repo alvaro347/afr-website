@@ -12,12 +12,6 @@ body {
   max-width: 1100px;
 }
 
-
-.img {
-  width: 100%;
-}
-
-
 .has-dropdown {
   position: relative;
 }
@@ -92,7 +86,10 @@ ul li a:hover, ul li a:focus, ul li a:active {
   color: white;
   text-decoration: none;
 }
-//
+
+
+
+
 
 #showcase {
   overflow: hidden;
@@ -122,7 +119,6 @@ ul li a:hover, ul li a:focus, ul li a:active {
   color: white;
   z-index: 20000;
 }
-
 
 
 
@@ -181,17 +177,6 @@ ul li a:hover, ul li a:focus, ul li a:active {
   // border-radius: 5px;
   // box-shadow: 0 5px 5px rgba(0,0,0,0.5);
 }
-#developer-img{
-  order: 1;
-  // overflow: hidden;
-  // width: 300px;
-  // height: 400px;
-  // border-radius: 5px;
-  // box-shadow: 0 5px 5px rgba(0,0,0,0.5);
-}
-
-
-
 
 
 #portrait {
@@ -651,8 +636,6 @@ ul li a:hover, ul li a:focus, ul li a:active {
   width: 70%;
   padding: 40px;
   align-self:center;
-
-
 }
 
 .entry-img-cont {
