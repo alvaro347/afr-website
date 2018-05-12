@@ -7,7 +7,8 @@
     border-radius: 7px;
     margin-top: 50px;
     padding: 0px;
-    overflow: hidden; }
+    overflow: hidden;
+    max-width: 500px; }
   .text-wrapper {
     width: 100%;
     font-size: 16px;

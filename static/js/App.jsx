@@ -15,8 +15,10 @@ import Portfolio from './Components/Portfolio';
 import Thumbnails from './Components/Thumbnails';
 
 require('../css/style.css');
+require('../css/header-footer.css');
 require('../css/querys.css');
 require('../css/donut.css');
+
 require('../css/animate.css');
 
 
@@ -37,7 +39,7 @@ class App extends Component {
           <div className="home">
             <Header />
             <Showcase />
-            <Thumbnails />
+            {/* <Thumbnails /> */}
             <Portrait />
             <Home />
             {/* <Contact /> */}

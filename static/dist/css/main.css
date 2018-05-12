@@ -6,116 +6,10 @@ body {
   margin: 0; }
 
 .container {
-  padding: 2px 16px; }
+  max-width: 1100px; }
 
 .img {
   width: 100%; }
-
-#header {
-  position: fixed;
-  top: 0;
-  z-index: 4000;
-  width: 100%; }
-
-.nav-bar {
-  background-color: rgba(186, 186, 186, 0.5);
-  z-index: 1009;
-  padding: 20px 0px;
-  width: 100%;
-  z-index: 1001;
-  background-color: rgba(0, 0, 0, 0.8);
-  height: 70px; }
-
-.nav-list {
-  right: 0;
-  margin-right: 4%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  float: right;
-  padding: 0;
-  -webkit-transition: 0;
-  transition: 0; }
-
-.nav-link-active {
-  color: white;
-  display: block;
-  padding: .5rem 1rem;
-  border-bottom: 2px solid white; }
-
-.menu {
-  z-index: 3000;
-  display: block; }
-
-.menu-icon {
-  font-size: 14px;
-  margin-right: 10px; }
-
-.nav-item {
-  margin-right: 5px; }
-
-.nav-item, .social-icon {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: inline; }
-
-.logo {
-  width: 100px; }
-
-.logo-container {
-  margin-left: 6%;
-  float: left; }
-
-.animated-fast {
-  -webkit-animation-duration: .5s;
-          animation-duration: .5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both; }
-
-@-webkit-keyframes fadeInUpMenu {
-  from {
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transform: translate3d(0, 20px, 0);
-            transform: translate3d(0, 20px, 0); }
-  to {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: none;
-            transform: none; } }
-
-@keyframes fadeInUpMenu {
-  from {
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transform: translate3d(0, 20px, 0);
-            transform: translate3d(0, 20px, 0); }
-  to {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: none;
-            transform: none; } }
-
-@keyframes fadeInUpMenu {
-  from {
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0);
-    -webkit-transform: translate3d(0, 20px, 0);
-            transform: translate3d(0, 20px, 0); }
-  to {
-    visibility: visible;
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none; } }
-
-.fadeInUpMenu {
-  -webkit-animation-name: fadeInUpMenu;
-          animation-name: fadeInUpMenu; }
 
 .has-dropdown {
   position: relative; }
@@ -212,11 +106,17 @@ ul li a:hover, ul li a:focus, ul li a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 100px; }
+  margin: 20px auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1100px; }
 
 .text-wrapper {
   margin-right: 5%;
-  width: 60%; }
+  width: 60%;
+  -ms-flex-item-align: center;
+      align-self: center; }
 
 .text-wrapper-2 {
   margin-left: 5%;
@@ -240,54 +140,14 @@ ul li a:hover, ul li a:focus, ul li a:active {
 
 .image-wrapper {
   overflow: hidden;
-  width: 300px;
+  max-width: 400px;
+  width: 30%;
   height: 400px; }
 
 #developer-img {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1; }
-
-#footer {
-  background-color: grey;
-  padding: 20px; }
-
-.footer-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: auto;
-  width: 90%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.social-text {
-  width: 30%; }
-
-.social-list {
-  margin: 0;
-  padding: 0; }
-
-.footer-social {
-  right: 0; }
-
-.footer-links {
-  margin-left: 8%;
-  margin-right: 6%; }
-
-.footer-icon {
-  font-size: 30px; }
-
-.social-icon, .footer-text, .social-list {
-  padding: 5px 10px;
-  color: #fff;
-  text-decoration: none; }
 
 #portrait {
   height: 250px;
@@ -304,7 +164,7 @@ ul li a:hover, ul li a:focus, ul li a:active {
 .intro {
   text-align: center;
   width: 60%;
-  margin-bottom: 50px;
+  margin: 10px auto;
   overflow: hidden; }
 
 #contact {
@@ -329,6 +189,7 @@ ul li a:hover, ul li a:focus, ul li a:active {
   margin-top: 20px;
   width: 300px;
   margin: 20px;
+  height: 500px;
   border-radius: 5px;
   overflow: hidden;
   -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
@@ -712,6 +573,105 @@ ul li a:hover, ul li a:focus, ul li a:active {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+#header {
+  position: fixed;
+  top: 0;
+  z-index: 4000;
+  width: 100%; }
+
+.nav-bar {
+  background-color: rgba(186, 186, 186, 0.5);
+  z-index: 1009;
+  padding: 20px 0px;
+  width: 100%;
+  z-index: 1001;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 70px; }
+
+.nav-list {
+  right: 0;
+  margin-right: 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  float: right;
+  padding: 0;
+  -webkit-transition: 0;
+  transition: 0; }
+
+.nav-link-active {
+  color: white;
+  display: block;
+  padding: .5rem 1rem;
+  border-bottom: 3px solid white;
+  height: 50px; }
+
+.menu {
+  z-index: 3000;
+  display: block; }
+
+.menu-icon {
+  font-size: 14px;
+  margin-right: 10px; }
+
+.nav-item {
+  margin-right: 5px; }
+
+.nav-item, .social-icon {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline; }
+
+.logo {
+  width: 100px; }
+
+.logo-container {
+  margin-left: 6%;
+  float: left; }
+
+#footer {
+  background-color: grey;
+  padding: 20px; }
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  width: 90%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.social-text {
+  width: 30%; }
+
+.social-list {
+  margin: 0;
+  padding: 0; }
+
+.footer-social {
+  right: 0; }
+
+.footer-links {
+  margin-left: 8%;
+  margin-right: 6%; }
+
+.footer-icon {
+  font-size: 30px; }
+
+.social-icon, .footer-text, .social-list {
+  padding: 5px 10px;
+  color: #fff;
+  text-decoration: none; }
 @media screen and (max-width: 750px) {
   .work {
     display: block;
@@ -721,7 +681,8 @@ ul li a:hover, ul li a:focus, ul li a:active {
     border-radius: 7px;
     margin-top: 50px;
     padding: 0px;
-    overflow: hidden; }
+    overflow: hidden;
+    max-width: 500px; }
   .text-wrapper {
     width: 100%;
     font-size: 16px;

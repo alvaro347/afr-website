@@ -21,7 +21,7 @@ class Home extends Component {
           animateOnce={true}
           duration={0.4}>
 
-          <div className="container intro">
+          <div className="intro">
             <h2 className="quote-title">Some of my work</h2>
             <p className="quote-text">Here you can checkout some of my work that goes from design (industrial design, posters, concept design, etc), Full-Stack Website developer video and photography works.</p>
           </div>
@@ -32,7 +32,7 @@ class Home extends Component {
           animateOnce={true}
           duration={0.4}>
 
-          <div className="container work">
+          <div className="work">
             <div className="text-wrapper">
               <h3 className="works-title">Designer</h3>
               <hr/>
@@ -57,7 +57,7 @@ class Home extends Component {
           animateOnce={true}
           duration={0.4}>
 
-          <div className="container work">
+          <div className="work">
 
             <div className="text-wrapper">
 
@@ -85,7 +85,7 @@ class Home extends Component {
           animateOnce={true}
           duration={0.4}>
 
-          <div  className="container work">
+          <div  className="work">
 
             <div className="text-wrapper">
               <h3 className="works-title">Photography</h3>
