@@ -69,7 +69,7 @@ class Galleries extends Component {
 
   componentDidMount() {
 
-      window.scrollTo(0, 0)
+    window.scrollTo(0, 0)
 
     fetch("http://localhost:3000/hello/json")
     .then(res => res.json())
@@ -101,7 +101,7 @@ class Galleries extends Component {
 
     <div className="cover-cont">
       <img src="./dist/img/capsula.jpg" className="cover"/>
-  </div>
+    </div>
 
 
 
@@ -117,72 +117,72 @@ class Galleries extends Component {
 
       <ul className="dev-cards">
 
-        <Gallery />
-        <Gallery />
-        <Gallery />
+      <Gallery />
+      <Gallery />
+      <Gallery />
 
-      </ul>
+    </ul>
 
-    </div>
-
-
-    <hr className="container"/>
-
-    <div className="btn-group btn-group-toggle selection" data-toggle="buttons">
-
-      <label className={ this.state.gallery === "all" ? this.state.active : this.state.notactive }>
-        <input
-          type="radio"
-          value="all"
-          id="option1"
-          checked={this.state.gallery === "all"}
-          onChange={this.handleChange}
-
-        /> All
-      </label>
-
-      <label className={ this.state.gallery === "digital" ? this.state.active : this.state.notactive }>
-        <input
-          type="radio"
-          value="digital"
-          checked={this.state.gallery === "digital"}
-          onChange={this.handleChange}
-          id="option2"
-        /> Digital
-      </label>
-
-      <label className={ this.state.gallery === "traditional" ? this.state.active : this.state.notactive }>
-        <input
-          type="radio"
-          value="traditional"
-          id="option3"
-          checked={this.state.gallery === "traditional"}
-          onChange={this.handleChange}
-        /> Traditional
-      </label>
-
-      <label className={ this.state.gallery === "3d" ? this.state.active : this.state.notactive }>
-        <input
-          type="radio"
-          value="3d"
-          id="option4"
-          checked={this.state.gallery === "3d"}
-          onChange={this.handleChange}
-        /> 3D
-      </label>
-    </div> */}
+  </div>
 
 
-    {/* <div className="btn-group btn-group-toggle selection" data-toggle="buttons">
+  <hr className="container"/>
 
-    { this.state.galleries.map((gallery) => (
-    <Radio
-    active = {this.state.active}
-    notactive = {this.state.notactive}
-    array={ gallery }
-    key= { gallery }
-    item = {this.state.gallery }
-  />
+  <div className="btn-group btn-group-toggle selection" data-toggle="buttons">
+
+  <label className={ this.state.gallery === "all" ? this.state.active : this.state.notactive }>
+  <input
+  type="radio"
+  value="all"
+  id="option1"
+  checked={this.state.gallery === "all"}
+  onChange={this.handleChange}
+
+/> All
+</label>
+
+<label className={ this.state.gallery === "digital" ? this.state.active : this.state.notactive }>
+<input
+type="radio"
+value="digital"
+checked={this.state.gallery === "digital"}
+onChange={this.handleChange}
+id="option2"
+/> Digital
+</label>
+
+<label className={ this.state.gallery === "traditional" ? this.state.active : this.state.notactive }>
+<input
+type="radio"
+value="traditional"
+id="option3"
+checked={this.state.gallery === "traditional"}
+onChange={this.handleChange}
+/> Traditional
+</label>
+
+<label className={ this.state.gallery === "3d" ? this.state.active : this.state.notactive }>
+<input
+type="radio"
+value="3d"
+id="option4"
+checked={this.state.gallery === "3d"}
+onChange={this.handleChange}
+/> 3D
+</label>
+</div> */}
+
+
+{/* <div className="btn-group btn-group-toggle selection" data-toggle="buttons">
+
+{ this.state.galleries.map((gallery) => (
+<Radio
+active = {this.state.active}
+notactive = {this.state.notactive}
+array={ gallery }
+key= { gallery }
+item = {this.state.gallery }
+/>
 ))}
 
 </div> */}

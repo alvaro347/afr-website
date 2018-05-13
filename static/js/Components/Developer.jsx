@@ -48,7 +48,7 @@ class Developer extends Component {
       ]
     };
   }
-  
+
   componentDidMount() {
     window.scrollTo(0, 0)
     fetch("http://localhost:3000/hello/json")
@@ -75,7 +75,7 @@ class Developer extends Component {
           <div className="dev-container">
             <div className="dev-intro">
               <h2>Full-Stack Web Developer</h2>
-              <p>I have created numerous projects using the lastest tools and frameworks shuch us: React, Flask, WebPack, jQuery, JSON and databases (PostgreSQL). This website was build entirely from start to finish with React, Flask, Bootstrap, Webpack and Gulp</p>
+              <p className="container">I have created numerous projects using the lastest tools and frameworks shuch us: React, Flask, WebPack, jQuery, JSON and databases (PostgreSQL). This website was build entirely from start to finish with React, Flask, Bootstrap, Webpack and Gulp</p>
             </div>
 
 
@@ -117,51 +117,53 @@ class Developer extends Component {
               </div>
 
               <div className="website">
-                <ScrollAnimation animateIn="fadeIn"
-                  animateOnce={true}
-                  duration={0.4}>
-                  <div className="website-text">
-                    <h2>This website was build from zero</h2>
-                    <hr className="container"/>
-                    <p>I build this website using the lastest technologies in web development. The Fron-End it's build with React, jQuery, HTML5, SASS and CSS3. For the Back-End I used Python (with Flask framework) to manage the server side. Also, it have a database (PostgreSQL) for having all the galleries, works and portfolio information of this website.</p>
-                  </div>
-                </ScrollAnimation>
-                <ScrollAnimation animateIn="fadeIn"
-                  animateOnce={true}
-                  duration={0.4}>
-                  <div className="website-list-cont">
-                    <ul className="website-list">
-                      <li className="website-item"><i className="fab fa-react web-icon"></i><p><b>React</b></p></li>
-                      <li className="website-item"><i className="fab fa-html5 web-icon"></i><p><b>HTML 5</b></p></li>
-                      <li className="website-item"><i className="fab fa-css3-alt web-icon"></i><p><b>CSS 3</b></p></li>
-                      <li className="website-item"><i className="fas fa-database web-icon"></i><p><b>PostgreSQL</b></p></li>
-                      <li className="website-item"><i className="fab fa-python web-icon"></i><p><b>Flask</b></p></li>
-                    </ul>
-                  </div>
-                </ScrollAnimation>
+                <div className="container">
+                  <ScrollAnimation animateIn="fadeIn"
+                    animateOnce={true}
+                    duration={0.4}>
+                    <div className="website-text">
+                      <h2>This website was build from zero</h2>
+                      <hr className="container"/>
+                      <p>I build this website using the lastest technologies in web development. The Fron-End it's build with React, jQuery, HTML5, SASS and CSS3. For the Back-End I used Python (with Flask framework) to manage the server side. Also, it have a database (PostgreSQL) for having all the galleries, works and portfolio information of this website.</p>
+                    </div>
+                  </ScrollAnimation>
+                  <ScrollAnimation animateIn="fadeIn"
+                    animateOnce={true}
+                    duration={0.4}>
+                    <div className="website-list-cont">
+                      <ul className="website-list">
+                        <li className="website-item"><i className="fab fa-react web-icon"></i><p><b>React</b></p></li>
+                        <li className="website-item"><i className="fab fa-html5 web-icon"></i><p><b>HTML 5</b></p></li>
+                        <li className="website-item"><i className="fab fa-css3-alt web-icon"></i><p><b>CSS 3</b></p></li>
+                        <li className="website-item"><i className="fas fa-database web-icon"></i><p><b>PostgreSQL</b></p></li>
+                        <li className="website-item"><i className="fab fa-python web-icon"></i><p><b>Flask</b></p></li>
+                      </ul>
+                    </div>
+                  </ScrollAnimation>
 
-                <ScrollAnimation animateIn="fadeIn"
-                  animateOnce={true}
-                  duration={0.4}>
-                  <div className="website-text">
-                    {/* <h2>Other technologies used</h2> */}
-                    {/* <hr className="container"/> */}
-                    <p>I also used some other techonologies to build this website such a task runner (Gulp) and a builder (Webpack). Git was used to keep track of the files (version control) and SASS for making more versitele CSS files. Bootstrap and Fonts Awesome for the Front-End were used also.</p>
-                  </div>
-                </ScrollAnimation>
+                  <ScrollAnimation animateIn="fadeIn"
+                    animateOnce={true}
+                    duration={0.4}>
+                    <div className="website-text">
+                      {/* <h2>Other technologies used</h2> */}
+                      {/* <hr className="container"/> */}
+                      <p>I also used some other techonologies to build this website such a task runner (Gulp) and a builder (Webpack). Git was used to keep track of the files (version control) and SASS for making more versitele CSS files. Bootstrap and Fonts Awesome for the Front-End were used also.</p>
+                    </div>
+                  </ScrollAnimation>
 
-                <ScrollAnimation animateIn="fadeIn"
-                  animateOnce={true}
-                  duration={0.4}>
-                  <div className="website-list-cont">
-                    <ul className="website-list">
-                      <li className="website-item"><i className="fab fa-gulp web-icon"></i><p><b>Gulp</b></p></li>
-                      <li className="website-item"><i className="fas fa-cube web-icon"></i><p><b> Webpack</b></p></li>
-                      <li className="website-item"><i className="fas fa-code-branch web-icon"></i><p><b>Git</b></p></li>
-                      <li className="website-item"><i className="fab fa-sass web-icon"></i><p><b>SASS</b></p></li>
-                    </ul>
-                  </div>
-                </ScrollAnimation>
+                  <ScrollAnimation animateIn="fadeIn"
+                    animateOnce={true}
+                    duration={0.4}>
+                    <div className="website-list-cont">
+                      <ul className="website-list">
+                        <li className="website-item"><i className="fab fa-gulp web-icon"></i><p><b>Gulp</b></p></li>
+                        <li className="website-item"><i className="fas fa-cube web-icon"></i><p><b> Webpack</b></p></li>
+                        <li className="website-item"><i className="fas fa-code-branch web-icon"></i><p><b>Git</b></p></li>
+                        <li className="website-item"><i className="fab fa-sass web-icon"></i><p><b>SASS</b></p></li>
+                      </ul>
+                    </div>
+                  </ScrollAnimation>
+                </div>
               </div>
 
 
@@ -179,7 +181,7 @@ class Developer extends Component {
 
               {/* <hr className="container"/> */}
 
-              <div className="dev-cards">
+              <div className="dev-cards container">
 
                 { this.state.projects.map((project) => (
 

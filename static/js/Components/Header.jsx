@@ -3,8 +3,6 @@ import { Router, browserHistory } from 'react-router';
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 
 
-
-
 class Header extends Component {
   constructor(props) {
     super(props);

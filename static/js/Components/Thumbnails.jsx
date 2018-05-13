@@ -6,9 +6,7 @@ import Thumbnail from './Sub/Thumbnail'
 
 
 class Thumbnails extends Component {
-
-
-
+  
   constructor() {
     super();
     this.handleChange = this.handleChange.bind(this);
@@ -63,9 +61,7 @@ class Thumbnails extends Component {
   }
 
   componentDidMount() {
-
     window.scrollTo(0, 0)
-
     fetch("http://localhost:3000/hello/json")
     .then(res => res.json())
     .then(
@@ -73,7 +69,6 @@ class Thumbnails extends Component {
         this.setState({
           isLoaded: true,
           items: result.galleries
-
         });
       })
     }
@@ -99,7 +94,5 @@ class Thumbnails extends Component {
       );
     }
   }
-
-
 
   export default Thumbnails;

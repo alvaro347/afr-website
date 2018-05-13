@@ -6,7 +6,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 class Thumbnail extends Component {
 
   render() {
-
+    
     return (
 
       <figure className="thumbnail">

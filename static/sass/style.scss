@@ -1,6 +1,13 @@
+
+// NOTE: Variables
+
 $primary-color: rgba(0,0,0,0.2);
 $img-path: "./~/../img/";
 $basic-shadow: 0 5px 5px rgba(0,0,0,0.3);
+
+
+// NOTE: General adjustments
+
 
 * {box-sizing: border-box;}
 
@@ -12,61 +19,7 @@ body {
   max-width: 1100px;
 }
 
-.has-dropdown {
-  position: relative;
-}
 
-.has-dropdown .dropdown {
-  width: 140px;
-  box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
-  z-index: 1002;
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  top: 40px;
-  left: 0;
-  text-align: left;
-  background: #000;
-  padding: 20px;
-  border-radius: 4px;
-  transition: 0s;
-}
-
-.has-dropdown .dropdown:before {
-  bottom: 100%;
-  left: 40px;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-bottom-color: #000;
-  border-width: 8px;
-  margin-left: -8px;
-}
-ul li.has-dropdown .dropdown li {
-  display: block;
-  margin-bottom: 7px;
-}
-ul li.has-dropdown .dropdown li:last-child {
-  margin-bottom: 0;
-}
-ul li.has-dropdown .dropdown li a .menu-icon {
-  padding: 2px 0;
-  display: block;
-  color: #999999;
-  line-height: 1.2;
-  text-transform: none;
-  font-size: 13px;
-  letter-spacing: 0;
-}
-ul li.has-dropdown .dropdown li a:hover .menu-icon {
-  color: #fff;
-}
-ul li.has-dropdown:hover a, ul li.has-dropdown:focus a {
-  color: #fff;
-}
 
 ul li a {
   font-size: 13px;
@@ -88,6 +41,8 @@ ul li a:hover, ul li a:focus, ul li a:active {
 }
 
 
+
+// NOTE: Showcase
 
 
 
@@ -121,17 +76,36 @@ ul li a:hover, ul li a:focus, ul li a:active {
 }
 
 
+// NOTE: Portrait
 
-// section
 
-.work {
-  display: flex;
-  margin: 20px auto;
-  justify-content: center;
-  max-width: 1100px;
+#portrait {
+  height: 250px;
+  width: 250px;
+  margin: 50px auto;
+  clear: both;
+  overflow: hidden;
+  border-radius: 150px;
+  text-align: center;
 }
 
 
+// NOTE: Home page
+
+
+.intro {
+  text-align: center;
+  width: 60%;
+  margin: 10px auto;
+  overflow: hidden;
+}
+
+.work {
+  display: flex;
+  margin: 70px auto;
+  justify-content: center;
+  max-width: 1100px;
+}
 
 .text-wrapper {
   margin-right: 5%;
@@ -157,16 +131,7 @@ ul li a:hover, ul li a:focus, ul li a:active {
 }
 
 .work-image {
-  // bottom: 50%;
-  // right: 50%;
-  // margin-bottom: -244px;
-  // margin-right: 40px;
-  // width: 350px;
   width: 100%;
-  // transition: filter 2s;
-  // left: 50%;
-  // margin-left: 40px;
-  // filter: brightness(0.7) contrast(0.8) sepia(1) hue-rotate(160deg) saturate(3);
 }
 
 .image-wrapper {
@@ -174,35 +139,14 @@ ul li a:hover, ul li a:focus, ul li a:active {
   max-width: 400px;
   width: 30%;
   height: 400px;
-  // border-radius: 5px;
-  // box-shadow: 0 5px 5px rgba(0,0,0,0.5);
-}
-
-
-#portrait {
-  height: 250px;
-  width: 250px;
-  margin: 50px auto;
-  clear: both;
-  overflow: hidden;
-  // border: 2px solid grey;
-  border-radius: 150px;
-  // background: white;
-  text-align: center;
-
 }
 
 .portrait-img {
   width: 100%;
 }
 
-.intro {
-  text-align: center;
-  width: 60%;
-  // margin: auto 0;
-  margin: 10px auto;
-  overflow: hidden;
-}
+
+// NOTE: Contact
 
 
 #contact {
@@ -213,7 +157,7 @@ ul li a:hover, ul li a:focus, ul li a:active {
 }
 
 
-// Mobile menu bar
+// NOTE Mobile menu bar
 
 
 .burger-button {
@@ -231,10 +175,9 @@ ul li a:hover, ul li a:focus, ul li a:active {
 
 
 
+// NOTE: Card style
 
 
-
-// Card style
 
 .card {
   margin-top: 20px;
@@ -263,18 +206,15 @@ ul li a:hover, ul li a:focus, ul li a:active {
 
 
 
-// developer
+// NOTE: Developer
+
 
 #developer {
   overflow: hidden;
 }
 
 .website {
-  // padding: 30px ;
   background: rgba(221, 221, 221, 0.5);
-  // display: flex;
-  // flex-wrap: wrap;
-  // background-image: url();
   justify-content: center;
   text-align: center;
   padding: 50px;
@@ -282,41 +222,32 @@ ul li a:hover, ul li a:focus, ul li a:active {
 
 .website-text {
   padding: 0 50px;
-  // max-width: 1000px;
-  // width:60%;
   margin-bottom: 50px;
   color: rgb(34, 34, 34);
 }
 
 .website-list-cont {
-  // max-width: 500px;
-  // text-align: left;
   list-style: none;
-
-  // width: 80%;
 }
+
 .website-list {
-  // padding: 50px;
   display: flex;
   flex-wrap: wrap;
-  // text-align: center;
   justify-content: center;
   list-style: none;
   color: grey;
 }
+
 .website-item {
-  // display: flex;
-  // flex-wrap: wrap;
   width: 130px;
   margin: 20px;
 }
+
 .web-icon {
-  // float: left;
   font-size: 60px;
   color: #2ca0cf;
   margin-bottom: 20px;
 }
-
 
 .dev-intro {
   clear: both;
@@ -329,15 +260,11 @@ ul li a:hover, ul li a:focus, ul li a:active {
   padding: 150px;
 }
 
-
-
 .cover {
-  // margin: auto;
   height: 300%;
   z-index: -1;
   margin: 0;
   overflow: hidden;
-  // display: none;
 }
 
 .cover-cont {
@@ -348,8 +275,6 @@ ul li a:hover, ul li a:focus, ul li a:active {
   height: 400px;
   margin: 0;
 }
-
-
 
 .dev-skills-list {
   list-style: none;
@@ -392,7 +317,12 @@ ul li a:hover, ul li a:focus, ul li a:active {
 }
 
 
-// gallery
+// NOTE: Gallery
+
+
+#galleries {
+  overflow: hidden;
+}
 
 .gallery {
   margin-top: 50px;
@@ -400,11 +330,7 @@ ul li a:hover, ul li a:focus, ul li a:active {
 }
 
 .gallery-imgs {
-  // margin: 5px;
   border: 2px solid #ccc;
-  // float: left;
-  // min-width: 300px;
-  // width: 50%;
   margin: 10px auto;
   justify-content: center;
   width: 100%;
@@ -421,17 +347,15 @@ ul li a:hover, ul li a:focus, ul li a:active {
   height: auto;
   overflow: hidden;
 }
+
 .gallery-img {
   width: 100%;
-
-
   opacity: 1;
   display: block;
   width: 100%;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
-
 }
 
 .desc {
@@ -453,9 +377,6 @@ ul li a:hover, ul li a:focus, ul li a:active {
   list-style: none
 
 }
-#galleries {
-  overflow: hidden;
-}
 
 .galleries-list {
   display: flex;
@@ -476,8 +397,6 @@ ul li a:hover, ul li a:focus, ul li a:active {
   height: 100%;
   width: 100%;
   opacity: 0;
-  // left: 50%;
-  // transform: translate(-50%,/ -50%);
   text-align: center;
 }
 
@@ -498,8 +417,9 @@ ul li a:hover, ul li a:focus, ul li a:active {
   -ms-transform: translate(-50%, -50%);
 }
 
-// about
 
+
+// NOTE: About
 
 
 .about-card {
@@ -565,47 +485,30 @@ ul li a:hover, ul li a:focus, ul li a:active {
 
 .about-img-container2 {
   width: 50%;
-  // align-self: center;
-  //   overflow: hidden;
-  //   margin-right: 20px;
-
-
 }
 
 .about-img2 {
-  // border-radius: 100px;
   width: 100%;
 }
 .about-text2 {
   color: white;
   width: 50%;
   padding: 50px;
-
-  // align-self: center;
 }
-
-
-
-// .active {
-//   background: white;
-//   font-size: 40px;
-// }
 
 .about-img {
   width: 100%;
-
 }
 
 .gap {
   height: 100px;
 }
 
-// Portfolio
+
+// NOTE: Portfolio
+
 
 .entry {
-  // width: 800px;
-  // margin: 0;
-  // justify-content: center;
   height: 400px;
 }
 
@@ -622,7 +525,6 @@ ul li a:hover, ul li a:focus, ul li a:active {
   width: 80%;
   max-width: 900px;
   min-width: 300px;
-  // height: 20px;
   height: 80%;
   margin: 0 auto;
   border-radius: 10px;
@@ -632,7 +534,6 @@ ul li a:hover, ul li a:focus, ul li a:active {
 }
 
 .entry-text {
-  // float: left;
   width: 70%;
   padding: 40px;
   align-self:center;
@@ -641,13 +542,12 @@ ul li a:hover, ul li a:focus, ul li a:active {
 .entry-img-cont {
   width: 25%;
 }
+
 .entry-img {
-  // float: right;
   width: 100%;
   align-self: center;
-
-
 }
+
 .entry-img-cont {
   align-self: center;
   border-radius: 10px;
@@ -660,7 +560,6 @@ ul li a:hover, ul li a:focus, ul li a:active {
   height: 127%;
   background: rgb(205, 205, 205);
   z-index: -1;
-  // right: 30px;
   top:-30px;
   left: 20%;
 }
@@ -674,14 +573,14 @@ ul li a:hover, ul li a:focus, ul li a:active {
   left: -145%;
   bottom: 0;
   display: inline-block
-
 }
 
-// thumbnails
+
+// NOTE: Thumbnails
+
 
 #thumbnails {
   max-width: 1000px;
-  // display: flex;
   margin: 50px auto;
 }
 

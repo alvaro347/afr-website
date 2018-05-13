@@ -8,61 +8,6 @@ body {
 .container {
   max-width: 1100px; }
 
-.has-dropdown {
-  position: relative; }
-
-.has-dropdown .dropdown {
-  width: 140px;
-  -webkit-box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
-  z-index: 1002;
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  top: 40px;
-  left: 0;
-  text-align: left;
-  background: #000;
-  padding: 20px;
-  border-radius: 4px;
-  -webkit-transition: 0s;
-  transition: 0s; }
-
-.has-dropdown .dropdown:before {
-  bottom: 100%;
-  left: 40px;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-bottom-color: #000;
-  border-width: 8px;
-  margin-left: -8px; }
-
-ul li.has-dropdown .dropdown li {
-  display: block;
-  margin-bottom: 7px; }
-
-ul li.has-dropdown .dropdown li:last-child {
-  margin-bottom: 0; }
-
-ul li.has-dropdown .dropdown li a .menu-icon {
-  padding: 2px 0;
-  display: block;
-  color: #999999;
-  line-height: 1.2;
-  text-transform: none;
-  font-size: 13px;
-  letter-spacing: 0; }
-
-ul li.has-dropdown .dropdown li a:hover .menu-icon {
-  color: #fff; }
-
-ul li.has-dropdown:hover a, ul li.has-dropdown:focus a {
-  color: #fff; }
-
 ul li a {
   font-size: 13px;
   text-transform: uppercase;
@@ -99,11 +44,26 @@ ul li a:hover, ul li a:focus, ul li a:active {
   color: white;
   z-index: 20000; }
 
+#portrait {
+  height: 250px;
+  width: 250px;
+  margin: 50px auto;
+  clear: both;
+  overflow: hidden;
+  border-radius: 150px;
+  text-align: center; }
+
+.intro {
+  text-align: center;
+  width: 60%;
+  margin: 10px auto;
+  overflow: hidden; }
+
 .work {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px auto;
+  margin: 70px auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -141,23 +101,8 @@ ul li a:hover, ul li a:focus, ul li a:active {
   width: 30%;
   height: 400px; }
 
-#portrait {
-  height: 250px;
-  width: 250px;
-  margin: 50px auto;
-  clear: both;
-  overflow: hidden;
-  border-radius: 150px;
-  text-align: center; }
-
 .portrait-img {
   width: 100%; }
-
-.intro {
-  text-align: center;
-  width: 60%;
-  margin: 10px auto;
-  overflow: hidden; }
 
 #contact {
   background: #d1d1d1;
@@ -310,6 +255,9 @@ ul li a:hover, ul li a:focus, ul li a:active {
           justify-content: center;
   width: 100%; }
 
+#galleries {
+  overflow: hidden; }
+
 .gallery {
   margin-top: 50px; }
 
@@ -361,9 +309,6 @@ ul li a:hover, ul li a:focus, ul li a:active {
 .gallery-card {
   margin: 20px;
   list-style: none; }
-
-#galleries {
-  overflow: hidden; }
 
 .galleries-list {
   display: -webkit-box;

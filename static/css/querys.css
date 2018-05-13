@@ -21,7 +21,10 @@
     width: 80%; }
   .work-image {
     width: 100%;
-    margin-left: 0px; }
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    vertical-align: middle; }
   .image-wrapper-2 {
     overflow: hidden;
     width: 100%;
@@ -33,6 +36,7 @@
   .image-wrapper {
     margin-top: 20px;
     width: 100%;
+    max-width: 500px;
     overflow: hidden; }
   #showcase {
     height: 400px; }
@@ -40,7 +44,7 @@
     padding: 0px;
     width: 90%;
     margin-bottom: 80px;
-    margin-top: -30px; }
+    max-width: 450px; }
   #portrait {
     height: 200px;
     width: 200px;
@@ -68,7 +72,9 @@
   .website {
     padding: 30px 0; }
   .website-list {
-    padding: 0; } }
+    padding: 0; }
+  .cover-img {
+    width: 100%; } }
 
 @media screen and (max-width: 757px) {
   .entry {
@@ -155,7 +161,3 @@
   .cover-img {
     height: 100%;
     width: auto; } }
-
-@media screen and (max-width: 750px) {
-  .cover-img {
-    width: 100%; } }

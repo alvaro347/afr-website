@@ -58,9 +58,7 @@ class Home extends Component {
           duration={0.4}>
 
           <div className="work">
-
             <div className="text-wrapper">
-
               <h3 className="works-title">Developer</h3>
               <hr/>
               <p>Fron-End and Back-End developer including databases, applications, APIs, etc. Knowledge in HTML, CSS, Javascript ( React, jQuery), Python, PostgreSQL, Ubuntu, Git, databases, Numpy, etc.</p>
@@ -70,15 +68,13 @@ class Home extends Component {
                 <li>Fron-End Web Developer: Google APIs, Games, React, etc.</li>
                 <li>Intro to Programming (Data analisis Specialisation).</li>
               </ul>
-
-
               <Link to="/developer"><button type="button" className="btn btn-outline-primary button-3">Projects</button></Link>
-
             </div>
             <div className="image-wrapper">
               <img src="./dist/img/code.png" alt="work1" className="work-image"/>
             </div>
           </div>
+
         </ScrollAnimation>
 
         <ScrollAnimation animateIn="fadeIn"
@@ -86,7 +82,6 @@ class Home extends Component {
           duration={0.4}>
 
           <div  className="work">
-
             <div className="text-wrapper">
               <h3 className="works-title">Photography</h3>
               <hr/>
@@ -98,6 +93,7 @@ class Home extends Component {
               <img src="./dist/img/photo.jpg" alt="work1" className="work-image"/>
             </div>
           </div>
+          
         </ScrollAnimation>
 
       </section>

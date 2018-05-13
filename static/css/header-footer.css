@@ -50,12 +50,12 @@
   list-style: none;
   display: inline; }
 
-.logo {
-  width: 100px; }
-
 .logo-container {
   margin-left: 6%;
   float: left; }
+
+.logo {
+  width: 100px; }
 
 #footer {
   background-color: grey;
