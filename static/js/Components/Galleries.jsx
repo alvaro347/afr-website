@@ -68,75 +68,73 @@ class Galleries extends Component {
 
 
   componentDidMount() {
-
     window.scrollTo(0, 0)
-
     fetch("http://localhost:3000/hello/json")
     .then(res => res.json())
-    .then(
-      (result) => {
-        this.setState({
+    .then(result =>
+      this.setState(
+        {
           isLoaded: true,
           items: result.galleries
+        }
+      )
+    );
+  }
 
-        });
-      })
-    }
+  render() {
+    const { error, isLoaded, items } = this.state;
+    return (
 
-    render() {
-      const { error, isLoaded, items } = this.state;
-      return (
-
-        <section id="galleries">
-          {/* <div>
-            <ul>
-            { items.map(item => (
-            <li key={item.id}>
-            {item.imgfile}
-          </li>
-        ))}
-      </ul>
-
-    </div> */}
-
-    <div className="cover-cont">
-      <img src="./dist/img/capsula.jpg" className="cover"/>
-    </div>
-
-
-
-    <div className="dev-intro">
-      <h2>Designer</h2>
-
-      <p>I'm currently studying at the FZD School of Design in Singapore. Some of my work can be found here.</p>
-
-
-    </div>
-
-    {/* <div>
-
-      <ul className="dev-cards">
-
-      <Gallery />
-      <Gallery />
-      <Gallery />
-
+      <section id="galleries">
+        {/* <div>
+          <ul>
+          { items.map(item => (
+          <li key={item.id}>
+          {item.imgfile}
+        </li>
+      ))}
     </ul>
 
+  </div> */}
+
+  <div className="cover-cont">
+    <img src="./dist/img/capsula.jpg" className="cover"/>
   </div>
 
 
-  <hr className="container"/>
 
-  <div className="btn-group btn-group-toggle selection" data-toggle="buttons">
+  <div className="dev-intro">
+    <h2>Designer</h2>
 
-  <label className={ this.state.gallery === "all" ? this.state.active : this.state.notactive }>
-  <input
-  type="radio"
-  value="all"
-  id="option1"
-  checked={this.state.gallery === "all"}
-  onChange={this.handleChange}
+    <p>I'm currently studying at the FZD School of Design in Singapore. Some of my work can be found here.</p>
+
+
+  </div>
+
+  {/* <div>
+
+    <ul className="dev-cards">
+
+    <Gallery />
+    <Gallery />
+    <Gallery />
+
+  </ul>
+
+</div>
+
+
+<hr className="container"/>
+
+<div className="btn-group btn-group-toggle selection" data-toggle="buttons">
+
+<label className={ this.state.gallery === "all" ? this.state.active : this.state.notactive }>
+<input
+type="radio"
+value="all"
+id="option1"
+checked={this.state.gallery === "all"}
+onChange={this.handleChange}
 
 /> All
 </label>

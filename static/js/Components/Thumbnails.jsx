@@ -6,7 +6,7 @@ import Thumbnail from './Sub/Thumbnail'
 
 
 class Thumbnails extends Component {
-  
+
   constructor() {
     super();
     this.handleChange = this.handleChange.bind(this);
@@ -61,38 +61,39 @@ class Thumbnails extends Component {
   }
 
   componentDidMount() {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0)    
     fetch("http://localhost:3000/hello/json")
     .then(res => res.json())
-    .then(
-      (result) => {
-        this.setState({
+    .then(result =>
+      this.setState(
+        {
           isLoaded: true,
           items: result.galleries
-        });
-      })
-    }
-
-    render() {
-      const { error, isLoaded, items } = this.state;
-      return (
-
-        <section id="thumbnails">
-
-          <div className="thumbnails-container">
-            { this.state.images.map((image) => (
-              <Thumbnail
-                img = {image.img}
-                key = { image.title }
-              />
-            ))}
-          </div>
-
-
-        </section>
-
-      );
-    }
+        }
+      )
+    );
   }
 
-  export default Thumbnails;
+  render() {
+    const { error, isLoaded, items } = this.state;
+    return (
+
+      <section id="thumbnails">
+
+        <div className="thumbnails-container">
+          { this.state.images.map((image) => (
+            <Thumbnail
+              img = {image.img}
+              key = { image.title }
+            />
+          ))}
+        </div>
+
+
+      </section>
+
+    );
+  }
+}
+
+export default Thumbnails;
