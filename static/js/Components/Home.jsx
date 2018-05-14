@@ -93,7 +93,7 @@ class Home extends Component {
               <img src="./dist/img/photo.jpg" alt="work1" className="work-image"/>
             </div>
           </div>
-          
+
         </ScrollAnimation>
 
       </section>

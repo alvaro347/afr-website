@@ -45,12 +45,9 @@
     width: 90%;
     margin-bottom: 80px;
     max-width: 450px; }
-  #portrait {
-    height: 200px;
-    width: 200px;
-    border-radius: 100px; }
   #home-content {
-    clear: both; }
+    clear: both;
+    padding: 0; }
   .quote-title {
     margin-bottom: 20px; }
   #contact {
@@ -106,11 +103,22 @@
     margin-left: 6%;
     margin-right: 4%; } }
 
+@media screen and (max-width: 800px) {
+  .portrait-container {
+    margin-right: 0; }
+  .portrait-text {
+    margin-top: 20px;
+    width: 90%;
+    max-width: 90%;
+    text-align: center; } }
+
 @media screen and (max-width: 890px) {
   .burger-button {
     display: inline-block;
-    right: 10%;
+    right: 5%;
     position: absolute; }
+  .nav-bar {
+    width: 100%; }
   .menu1 {
     clear: both;
     height: 350px;
@@ -118,15 +126,13 @@
     background-color: rgba(0, 0, 0, 0.8);
     display: inline-block;
     width: 100%;
-    margin-top: 17px;
+    margin-top: 12px;
     -webkit-transition: 0s;
     transition: 0s; }
   .menu {
     display: none; }
   .nav-link-active {
     border-bottom: none; }
-  .nav-bar {
-    padding: 20px 0; }
   .bar1 {
     margin-top: 0; }
   .bar3 {
@@ -161,3 +167,10 @@
   .cover-img {
     height: 100%;
     width: auto; } }
+
+@media screen and (min-width: 891px) and (max-width: 1100px) {
+  .nav-bar {
+    width: 95%; }
+  .footer-links {
+    margin-left: 6%;
+    margin-right: 4%; } }

@@ -64,14 +64,9 @@
     max-width: 450px;
   }
 
-  #portrait {
-    height: 200px;
-    width: 200px;
-    border-radius: 100px;
-  }
-
   #home-content {
     clear: both;
+    padding: 0;
   }
 
   .quote-title {
@@ -101,7 +96,6 @@
   }
 
   .gallery {
-
     margin-right: 0;
   }
 
@@ -169,13 +163,37 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+
+  #portrait {
+
+  }
+
+  .portrait-container {
+    margin-right: 0;
+  }
+
+  .portrait-text {
+    margin-top: 20px;
+    width: 90%;
+    max-width: 90%;
+    text-align: center
+  }
+
+}
+
+
 
 @media screen and (max-width: 890px) {
 
   .burger-button {
     display: inline-block;
-    right: 10%;
+    right: 5%;
     position: absolute;
+  }
+
+  .nav-bar{
+    width: 100%;
   }
 
   .menu1 {
@@ -185,7 +203,7 @@
     background-color: rgba(0,0,0,0.8);
     display: inline-block;
     width: 100%;
-    margin-top: 17px;
+    margin-top: 12px;
     transition: 0s;
   }
 
@@ -195,10 +213,6 @@
 
   .nav-link-active {
     border-bottom: none;
-  }
-
-  .nav-bar {
-    padding: 20px 0;
   }
 
   .bar1 {
@@ -257,5 +271,19 @@
   .cover-img {
     height: 100%;
     width: auto;
+  }
+}
+
+
+@media screen and (min-width: 891px) and (max-width: 1100px) {
+
+
+  .nav-bar{
+    width: 95%;
+  }
+
+  .footer-links {
+    margin-left: 6%;
+    margin-right: 4%;
   }
 }

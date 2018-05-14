@@ -30,40 +30,78 @@ ul li a:hover, ul li a:focus, ul li a:active {
   height: 700px;
   -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-  text-align: center;
   width: 100%;
-  margin-top: -60px; }
+  margin-top: 60px;
+  background: #4038d7;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(64, 56, 215, 0.7)), color-stop(36%, rgba(41, 112, 229, 0.7)), to(rgba(128, 218, 236, 0.7)));
+  background: linear-gradient(90deg, rgba(64, 56, 215, 0.7) 0%, rgba(41, 112, 229, 0.7) 36%, rgba(128, 218, 236, 0.7) 100%);
+  z-index: 1; }
 
 .showcase-img {
-  width: 100%;
+  height: 100%;
   position: relative;
   z-index: -3; }
 
 .showcase-text {
-  right: 40%;
-  color: white;
-  z-index: 20000; }
+  right: -7%;
+  top: -20%;
+  color: black;
+  z-index: 20000;
+  position: relative;
+  font-size: 60px;
+  background: white;
+  width: 200px;
+  font-weight: 400; }
 
 #portrait {
+  width: 75%;
+  max-width: 1000px;
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  padding: 30px 20px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
+
+.portrait-container {
   height: 250px;
   width: 250px;
-  margin: 50px auto;
-  clear: both;
   overflow: hidden;
   border-radius: 150px;
-  text-align: center; }
+  margin-right: 30px;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.portrait-text {
+  width: auto;
+  max-width: 50%;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.portrait-img {
+  width: 100%; }
+
+#home-content {
+  padding: 0 20px; }
 
 .intro {
   text-align: center;
   width: 60%;
-  margin: 10px auto;
+  margin: 0 auto;
   overflow: hidden; }
 
 .work {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 70px auto;
+  margin: 40px auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -101,9 +139,6 @@ ul li a:hover, ul li a:focus, ul li a:active {
   width: 30%;
   height: 400px; }
 
-.portrait-img {
-  width: 100%; }
-
 #contact {
   background: #d1d1d1;
   text-align: center;
@@ -129,8 +164,8 @@ ul li a:hover, ul li a:focus, ul li a:active {
   height: 500px;
   border-radius: 5px;
   overflow: hidden;
-  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3); }
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
 
 .card-img-container {
   width: 300px;
@@ -351,22 +386,15 @@ ul li a:hover, ul li a:focus, ul li a:active {
           transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%); }
 
-.about-card {
-  clear: both;
+#about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 20px;
-  background: white;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-  width: 60%;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  border: 1px solid grey; }
+  width: 100%;
+  margin-top: 60px;
+  background: #4596d4; }
 
 .about-img-container {
   width: 25%;
@@ -397,16 +425,6 @@ ul li a:hover, ul li a:focus, ul li a:active {
 
 .about-text2 hr {
   border-color: white; }
-
-#about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
-  margin-top: 70px;
-  background: #4596d4; }
 
 .about-img-container2 {
   width: 50%; }
@@ -448,8 +466,8 @@ ul li a:hover, ul li a:focus, ul li a:active {
   margin: 0 auto;
   border-radius: 10px;
   background: white;
-  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   border: 1px solid grey; }
 
 .entry-text {

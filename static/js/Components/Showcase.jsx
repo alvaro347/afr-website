@@ -54,7 +54,7 @@ class Showcase extends Component {
 
         <section id="showcase" role="banner">
 
-          <img src="./dist/img/gallery/machine.jpg" alt="" className="showcase-img"/>
+          <img src="./dist/img/gallery/doodle.jpg" alt="" className="showcase-img"/>
           {/* <div className="w3-content w3-display-container" style="max-width:800px">
           <img className="mySlides" src="./dist/css/img/capsula.png"  />
           <img className="mySlides" src="./dist/css/img/capsula.png"  />
@@ -67,9 +67,9 @@ class Showcase extends Component {
           <span className="w3-badge demo w3-border w3-transparent w3-hover-white" onClick={this.currentDiv(3)}></span>
         </div> */}
         {/* </div> */}
-        {/* <div className="showcase-text">
-          <h1>Hello</h1>
-        </div> */}
+        <div className="showcase-text">
+          <p>HOME</p>
+        </div>
       </section>
 
     );

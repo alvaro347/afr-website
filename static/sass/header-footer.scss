@@ -7,21 +7,22 @@
   top: 0;
   z-index: 4000;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 60px;
 }
 
 .nav-bar {
-  background-color: rgba(186, 186, 186, 0.5);
   z-index: 1009;
-  padding: 20px 0px;
-  width: 100%;
-  z-index: 1001;
-  background-color: rgba(0, 0, 0, 0.8);
-  height: 70px;
+  padding: 15px 0px;
+  width: 80%;
+  max-width: 1100px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .nav-list {
   right: 0;
-  margin-right: 4%;
+  // margin-right: 4%;
   display: flex;
   flex-wrap: wrap;
   float: right;
@@ -34,7 +35,7 @@
   display: block;
   padding: .5rem 1rem;
   border-bottom: 3px solid white;
-  height: 50px;
+  height: 45px;
 }
 
 .menu {
@@ -59,7 +60,7 @@
 }
 
 .logo-container {
-  margin-left: 6%;
+  margin-left: 4%;
   float: left;
 }
 
@@ -72,7 +73,7 @@
 
 
 #footer {
-  background-color: grey;
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 20px;
 }
 
