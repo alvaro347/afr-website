@@ -42,10 +42,10 @@ class Header extends Component {
   render() {
 
     return (
+      
       <header id="header">
 
         <nav className="nav-bar">
-
 
           <div className="logo-container" onClick={ this.resetMenu }>
             <Link to="/" className="link"><img src="./dist/img/logo.png" alt="Home Page" className="logo"/></Link>
