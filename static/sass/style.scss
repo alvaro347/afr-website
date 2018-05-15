@@ -19,6 +19,20 @@ body {
   max-width: 1100px;
 }
 
+.link {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 2px;
+  transition: 0.5s;
+  z-index: 4;
+}
+
+.link:hover {
+  color: white;
+  text-decoration: none;
+}
+
 ul li a {
   font-size: 13px;
   text-transform: uppercase;
@@ -174,21 +188,6 @@ ul li a:hover, ul li a:focus, ul li a:active {
 }
 
 
-// NOTE Mobile menu bar
-
-
-.burger-button {
-  display: none;
-}
-
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #ffffff;
-  margin: 6px 0;
-  transition: 0.4s;
-  border-radius: 2px;
-}
 
 
 
@@ -341,8 +340,7 @@ ul li a:hover, ul li a:focus, ul li a:active {
 }
 
 .gallery {
-  margin-top: 50px;
-  // margin: 30px auto;
+  margin: 50px 0;
 }
 
 .gallery-imgs {

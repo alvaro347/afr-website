@@ -14,12 +14,13 @@ import About from './Components/About';
 import Portfolio from './Components/Portfolio';
 import Thumbnails from './Components/Thumbnails';
 
+require('../css/animate.css');
 require('../css/style.css');
 require('../css/header-footer.css');
 require('../css/querys.css');
 require('../css/donut.css');
 
-require('../css/animate.css');
+
 
 
 

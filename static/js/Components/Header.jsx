@@ -24,7 +24,7 @@ class Header extends Component {
     if (this.state.visible) {
       menu.setAttribute("class", "menu");
     } else {
-      menu.setAttribute("class", "menu1");
+      menu.setAttribute("class", "menu1 animated-fast slideInDown");
     }
   }
 
@@ -39,7 +39,7 @@ class Header extends Component {
 
 
           <div className="logo-container">
-            <Link to="/"><img src="./dist/img/logo.png" alt="Home Page" className="logo"/></Link>
+            <Link to="/" className="link"><img src="./dist/img/logo.png" alt="Home Page" className="logo"/></Link>
           </div>
 
 

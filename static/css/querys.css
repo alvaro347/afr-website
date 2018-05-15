@@ -118,17 +118,8 @@
     right: 5%;
     position: absolute; }
   .nav-bar {
-    width: 100%; }
-  .menu1 {
-    clear: both;
-    height: 350px;
-    z-index: 3000;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: inline-block;
     width: 100%;
-    margin-top: 12px;
-    -webkit-transition: 0s;
-    transition: 0s; }
+    z-index: 2; }
   .menu {
     display: none; }
   .nav-link-active {
