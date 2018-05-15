@@ -12,6 +12,7 @@ class Header extends Component {
       normal: 'nav-link'
     };
     this.toggleMenu = this.toggleMenu.bind(this);
+    this.resetMenu = this.resetMenu.bind(this);
   }
 
 
@@ -24,11 +25,19 @@ class Header extends Component {
     if (this.state.visible) {
       menu.setAttribute("class", "menu");
     } else {
-      menu.setAttribute("class", "menu1 animated-fast slideInDown");
+      menu.setAttribute("class", "menu1 animated-fast fadeInDown");
     }
   }
 
-
+  resetMenu() {
+    const burger = document.getElementById("burger");
+    burger.setAttribute("class", "burger-button");
+    const menu = document.getElementById("menu");
+    menu.setAttribute("class", "menu");
+    this.setState({
+      visible: !this.state.visible
+    });
+  }
 
   render() {
 
@@ -38,20 +47,17 @@ class Header extends Component {
         <nav className="nav-bar">
 
 
-          <div className="logo-container">
+          <div className="logo-container" onClick={ this.resetMenu }>
             <Link to="/" className="link"><img src="./dist/img/logo.png" alt="Home Page" className="logo"/></Link>
           </div>
 
-
-
-          <div className="burger-button" onClick={ this.toggleMenu }>
+          <div className="burger-button" id="burger" onClick={ this.toggleMenu }>
             <div className="bar1"></div>
             <div className="bar2"></div>
             <div className="bar3"></div>
           </div>
 
           <div className="menu" id="menu">
-
             <ul className="nav-list">
 
               <li className="nav-item"><Link to="/" className={ window.location.pathname == '/' ? this.state.active : this.state.normal }><i className="fas fa-home menu-icon"></i>Home</Link></li>
@@ -61,33 +67,13 @@ class Header extends Component {
               <li className="nav-item"><Link to="/about" className={ window.location.pathname == '/about' ? this.state.active : this.state.normal }><i className="far fa-user menu-icon"></i>About</Link></li>
 
             </ul>
-
           </div>
 
-
-
-
-
-
         </nav>
+      </header>
 
-        {/* <div className="menu-2 dec" id="menu2">
-
-        <ul className="nav-menu">
-
-        <li className=""><Link to="/"><i className="fas fa-home menu-icon"></i>Home</Link></li>
-        <li className=""><Link to="/gallery"><i className="far fa-image menu-icon"></i>Gallery</Link></li>
-        <li className=""><Link to="/developer"><i className="fas fa-code menu-icon"></i>Developer</Link></li>
-        <li className=""><Link to="/portfolio"><i className="far fa-file-alt menu-icon"></i>Portfolio</Link></li>
-        <li className=""><Link to="/about"><i className="far fa-user menu-icon"></i>About</Link></li>
-
-      </ul>
-
-    </div> */}
-
-  </header>
-);
-}
+    );
+  }
 }
 
 export default Header;

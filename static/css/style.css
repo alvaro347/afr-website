@@ -15,7 +15,11 @@ body {
   letter-spacing: 2px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  z-index: 4; }
+  z-index: 4;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
 
 .link:hover {
   color: white;
@@ -27,7 +31,11 @@ ul li a {
   color: rgba(255, 255, 255, 0.5);
   letter-spacing: 2px;
   -webkit-transition: 0.5s;
-  transition: 0.5s; }
+  transition: 0.5s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
 
 .nav-item Link {
   padding: 5px 10px;
